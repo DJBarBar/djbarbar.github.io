@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap");
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: grey;
+}
+
+main,
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {
+  background-color: darkblue;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0 20px;
+}
+
+h3 {
+  font-size: 0.9rem;
+  margin: 5px 0;
+  color: #272f32;
+}
+
+p {
+  margin: 5px 0;
+}
+
+footer a {
+  color: #fff;
+}
+
+main {
+  max-width: 767px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10px;
+}
+
+section h2 {
+  background-color: #1d6373;
+  color: white;
+  margin: 0 -5px;
+  border-radius: 9px 9px 0 0;
+}
+
+section {
+  background-color: #daeaef;
+  margin: 0 0 20px;
+  padding: 0 5px 10px;
+  border: 1px solid #4494a6;
+  border-radius: 10px;
+}
+
+section img {
+  width: 100%;
+  border: 1px solid #4494a6;
+}
+
+section a {
+  color: #272f32;
+  margin-bottom: 10px;
+}
+
+section h2 {
+  padding: 5px;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+}
+footer p:last-child {
+  margin-bottom: 0;
+}
