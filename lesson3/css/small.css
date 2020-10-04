@@ -91,12 +91,12 @@ footer {
 footer p:last-child {
   margin-bottom: 0;
 }
-.abril {
-  font-family: "Abril Fatface", Cursive;
+.merriweather {
+  font-family: "Merriweather", Cursive;
   font-size: 48px;
 }
-.poppins {
-  font-family: "Poppins", Sans-Serif;
+.roboto {
+  font-family: "Roboto", Sans-Serif;
   font-size: 16px;
 }
 td {
