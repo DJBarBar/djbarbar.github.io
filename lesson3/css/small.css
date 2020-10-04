@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Roboto&display=swap");
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #274b59;
+}
+
+main,
+footer {
+  font-family: "Roboto", sans-serif;
+}
+
+header,
+footer {
+  background-color: #274b59;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: #8bbbd9;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background-color: #4494a6;
+  color: #fff;
+}
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 0.9rem;
+  margin: 10px;
+  color: #272f32;
+}
+
+p {
+  margin: 5px;
+}
+
+footer a {
+  color: #fff;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+header {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+}
+.abril {
+  font-family: "Abril Fatface", Cursive;
+  font-size: 48px;
+}
+.poppins {
+  font-family: "Poppins", Sans-Serif;
+  font-size: 16px;
+}
+td {
+  border: 2px solid #272f32;
+  text-align: center;
+  padding: 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main img {
+  margin-top: 20px;
+  width: 100%;
+}
+.grid-container img {
+  align-self: center;
+}
+.back {
+  text-align: left;
+  padding: 5px;
+  padding-left: 15px;
+}
+.back a {
+  color: #fff;
+  text-decoration: none;
+}
