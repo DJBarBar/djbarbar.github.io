@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preston Town Page</title>
+    <meta name="description" content="The homepage pf Preston Idaho with local weather and city information" />
+  <link rel="shortcut icon" href="favicon (1).ico">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+    <aside style="display:block;"></aside>
+  <nav class="back"><a href="/">&larr; Back to Assignment Portal</a></nav>
+  <header>
+    <picture>
+      <img class="logo" src="images/weathericon.png" alt="weather icon" />
+    </picture>
+    <section class="headings">
+      <h1>Southeast Idaho Local</h1>
+      <div class="motto">The wild is calling, and I must go!</div>
+    </section>
+
+  </header>
+  <nav class="clearfix">
+    <button onclick="toggleMenu()">&#9776;</button>
+    <ul id="primaryNav" class="hide">
+      <li><a href="#">Home</a></li>
+      <li class="active"><a href="">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Preston Idaho</h2>
+      <div class="placeholder">Hero with Weather Summary</div>
+      <div class="placeholder">5 Day Forecast</div>
+      <div class="placeholder">Article</div>
+      <div class="placeholder">Contact Information</div>
+
+  </main>
+  </main>
+  <footer>
+    <p>
+      &copy; Southeast Idaho Local | Attributions | Cory Barton
+    </p>
+    <p>
+      <span id="current-date"></span>
+    </p>
+  </footer>
+  <script src="js/preston.js"></script>
+</body>
+</html>
