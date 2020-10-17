@@ -26,7 +26,9 @@ nav ul {
 
 img {
   align-self: center;
-  width: auto;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
 }
 
 body,
@@ -35,4 +37,12 @@ p {
   font-family: "Open Sans", sans-serif;
   margin: auto;
   text-align: center;
+  color: #274b59;
+  max-width: 800px;
+}
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+  padding: 5px;
 }
