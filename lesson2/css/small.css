@@ -1,1 +1,53 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap");
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  line-height: 1;
+}
+
+header,
+footer {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 15px;
+  background-color: #8bbbd9;
+  text-align: center;
+  border-radius: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  column-span: 1;
+}
+
+img {
+  border-radius: 5px;
+  width: 100%;
+  align-self: center;
+  margin: 0px;
+}
+
+main section {
+  margin: 0.5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #8bbbd9;
+}
+
+main h2 {
+  background-color: #6da6a6;
+  width: auto;
+  margin: 0;
+  padding: 0px 0px 0px 5px;
+}
+
+main h3 {
+  padding: 0px 0px 0px 5px;
+}
+
+main p {
+  text-align: left;
+}
