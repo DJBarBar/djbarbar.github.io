@@ -10,8 +10,10 @@
     box-shadow: 0 0 30px #333;
     margin: 5px 15px;
   }
-  header,
+  header {
+    border-radius: 15px 15px 0px 0px;
+  }
   footer {
-    border-radius: 15px;
+    border-radius: 0px 0px 15px 15px;
   }
 }
