@@ -1,21 +1,2 @@
 @media only screen and (min-width: 35em) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  main,
-  footer {
-    font-size: 1rem;
-  }
-
-  .motto {
-    font-size: 1.5rem;
-  }
-  .logo {
-    width: 160px;
-  }
 }
