@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap");
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans";
   text-align: center;
   max-width: 800px;
   background-color: grey;
@@ -9,7 +9,7 @@ body {
 }
 
 h1 {
-  font-family: "Proza Libre", cursive;
+  font-family: "Proza Libre";
   font-size: 44px;
   color: white;
   background-color: #8bbbd9;

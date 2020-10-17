@@ -1,2 +1,12 @@
 @media only screen and (min-width: 35em) {
+  .navigate {
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 100%;
+    margin: auto;
+  }
+
+  header {
+    flex-flow: row;
+  }
 }

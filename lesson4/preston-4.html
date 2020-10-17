@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preston Town Page</title>
     <meta name="description" content="The homepage pf Preston Idaho with local weather and city information" />
-  <link rel="shortcut icon" href="favicon (1).ico">
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="css/small.css">
   <link rel="stylesheet" href="css/medium.css">
@@ -13,11 +12,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet">
 </head>
 <body>
-    <aside style="display:block;"></aside>
   <nav class="back"><a href="/">&larr; Back to Assignment Portal</a></nav>
   <header>
     <picture>
-      <img class="logo" src="images/weathericon.png" alt="weather icon" />
+      <img class="logo" src="images/cloud-rain-2631087-2175815.png" alt="weather icon" />
     </picture>
     <section class="headings">
       <h1>Southeast Idaho Local</h1>
@@ -25,11 +23,11 @@
     </section>
 
   </header>
-  <nav class="clearfix">
-    <button onclick="toggleMenu()">&#9776;</button>
-    <ul id="primaryNav" class="hide">
+  <nav>
+    <ul class="navigate">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
       <li><a href="#">Home</a></li>
-      <li class="active"><a href="">Preston</a></li>
+      <li><a href="#">Preston</a></li>
       <li><a href="#">Soda Springs</a></li>
       <li><a href="#">Fish Haven</a></li>
       <li><a href="#">Storm Center</a></li>
@@ -48,10 +46,10 @@
   </main>
   <footer>
     <p>
-      &copy; Southeast Idaho Local | Attributions | Cory Barton
+      &copy; <span id="current-date"></span> Southeast Idaho Local | WDD 230 | Cory Barton
     </p>
     <p>
-      <span id="current-date"></span>
+      <small>Last Updated:<span id="last-updated"></span> </small>
     </p>
   </footer>
   <script src="js/preston.js"></script>
