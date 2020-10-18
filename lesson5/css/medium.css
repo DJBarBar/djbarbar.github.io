@@ -1,0 +1,26 @@
+@media only screen and (min-width: 35em) {
+  .navigate {
+    display: flex;
+    flex-flow: row;
+    flex: 1 1 100%;
+    margin: auto;
+  }
+
+  .navigate li {
+    display: block;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  header {
+    flex-flow: row;
+  }
+
+  .contact .map {
+    display: flex;
+    float: left;
+    margin: 1rem;
+    width: 100%;
+    max-width: 750px;
+  }
+}
