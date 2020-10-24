@@ -215,4 +215,10 @@ footer {
 
 #pancake {
   background-color: grey;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
 }
