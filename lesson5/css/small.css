@@ -212,3 +212,7 @@ footer {
   max-width: 50px;
   width: 100%;
 }
+
+#pancake {
+  background-color: grey;
+}
