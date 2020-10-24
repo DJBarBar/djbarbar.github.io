@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images and Font</title>
+    <meta name="description" content="The homepage pf Preston Idaho with local weather and city information" />
+    <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+  <!--<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet">-->
+</head>
+<body>
+    
+  <nav class="back"><a href="/">&larr; Back to Assignment Portal</a></nav>
+  <div><span id='pancake'></span></div>
+  <header>
+    <picture>
+      <img class="logo" src="images/cloud-rain-2631087-2175815.png" alt="weather icon" />
+    </picture>
+    <section class="headings">
+      <h1>Southeast Idaho Local</h1>
+      <div class="motto">Weather when you want it.</div>
+    </section>
+
+  </header>
+  <nav>
+    <ul class="navigate">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="#" class="active">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="#">Storm Center</a></li>
+      <li><a href="#">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Preston Idaho</h2>
+      <div class="hero">
+        <picture>
+            <source srcset="images/newhero_medium.jpg" media="(min-width: 46em) and (max-width: 72em)">
+            <source srcset="images/newhero_large.jpg" media="(min-width: 72em)">
+            <img src="images/newhero_small.jpg" alt="Responsive Images.">
+        </picture>
+          <div class="weatherSummary">
+              <div class="weatherhead">
+                  <h3>Weather Summary</h2>
+              </div>
+              <div class="column1">
+                  <ul>
+                  <li>Currently:</li>
+                  <li>High:</li>
+                  <li>Wind Chill:</li>
+                  <li>Humidity:</li>
+                  <li>Wind:</li>
+                </ul>
+              </div>
+              <div class="column2">
+                <ul>
+                    <li><span id="currTemp">45</span> &#8457;</li>
+                    <li><span id="highTemp">67</span> &#8457;</li>
+                    <li><span id="chill"></span></li>
+                    <li><span id="humid">15</span>%</li>
+                    <li><span id="windSpeed">5</span>mph</li>
+                </ul>
+              </div>
+          </div>
+    </div>
+      <div class="forecast">
+          <div>
+              <h3>5 Day Forecast</h3>
+          </div>
+          <table class="weatherTable">
+              <tbody>
+                  <tr>
+                      <th>Wed</th>
+                      <th>Thu</th>
+                      <th>Fri</th>
+                      <th>Sat</th>
+                      <th>Sun</th>
+                  </tr>
+                  <tr>
+                      <td><img src="images/lightning+icon.png" alt="lightning">75&#8457;</td>
+                      <td><img src="images/lightning+icon.png" alt="lightning">59&#8457;</td>
+                      <td><img src="images/lightning+icon.png" alt="lightning">64&#8457;</td>
+                      <td><img src="images/lightning+icon.png" alt="lightning">72&#8457;</td>
+                      <td><img src="images/lightning+icon.png" alt="lightning">73&#8457;</td>
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+      <div class="article">
+          <h2>Bacon Ipsum</h2>
+          <h3>by Pig</h3>
+          <section>
+              <img src="images/bacon.jpg" alt="bacon">
+              <p>Bacon ipsum dolor amet drumstick rump venison, corned beef ham short loin sirloin turducken. Doner pig cow, buffalo filet mignon biltong capicola shoulder rump jowl. Porchetta sausage filet mignon biltong. Frankfurter landjaeger meatloaf corned beef, pig pastrami pork loin. Ham tenderloin cupim biltong capicola pork.</p>
+              <p>Frankfurter ground round rump short ribs, prosciutto tail burgdoggen tri-tip. Flank meatloaf spare ribs, hamburger sausage turducken biltong. Pork turducken tail, turkey bresaola kielbasa pastrami cow. Porchetta short ribs shank cupim pork chop. Strip steak beef short ribs, pancetta flank bacon tail porchetta. Boudin ribeye turkey, frankfurter chicken kevin hamburger chuck swine fatback tongue pork loin. Flank spare ribs pork strip steak t-bone prosciutto pastrami jerky.</p>
+          </section>
+      </div>
+      <div class="contact">
+          <h2>Contact Us</h2>
+          <h3>Heavy Rain Weather</h3>
+          <section class="map">
+              <img src="images/prestonmap.png" alt="map of Preston, ID">
+              </section>
+          <p>30 N 1st E.</p>
+          <p>Preston, ID 83263</p>
+          <br>
+          <p>&#9743; 999-999-9999</p>
+          <p>&#9993;<a href="heavyrain@hr.com"> heavyrain@hr.com</a></p>
+          <section class="social">
+            <a href="https://www.facebook.com"><img src="images/facebook-circular-logo.png" alt="Facebook logo"></a>
+            <a href="https://www.pinterest.com"><img src="images/pinterest-logo.png" alt="Pinterest logo"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Twitter logo"></a>
+            <a href="https://www.whatsapp.com"><img src="images/whatsapp.png" alt="Whatsapp logo"></a>
+          </section>
+      </div>
+
+  </main>
+  </main>
+  <footer>
+    <p>
+      &copy; <span id="current-date"></span> Southeast Idaho Local | WDD 230 | Cory Barton
+    </p>
+    <p>
+      <small>Last Updated:<span id="last-updated"></span> </small>
+    </p>
+  </footer>
+  <script src="js/preston.js"></script>
+  <script src="js/pancake.js"></script>
+  <script src="js/windchill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Open Sans', 'Proza Libre']
+    }
+  });
+</script>
+</body>
+</html>
