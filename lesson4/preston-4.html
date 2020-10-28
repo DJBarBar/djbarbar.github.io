@@ -1,57 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Preston Town Page</title>
-    <meta name="description" content="The homepage pf Preston Idaho with local weather and city information" />
-  <link rel="stylesheet" href="../css/normalize.css">
-  <link rel="stylesheet" href="css/small.css">
-  <link rel="stylesheet" href="css/medium.css">
-  <link rel="stylesheet" href="css/large.css">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap" rel="stylesheet">
-</head>
-<body>
-  <nav class="back"><a href="/">&larr; Back to Assignment Portal</a></nav>
-  <header>
-    <picture>
-      <img class="logo" src="images/cloud-rain-2631087-2175815.png" alt="weather icon" />
-    </picture>
-    <section class="headings">
-      <h1>Southeast Idaho Local</h1>
-      <div class="motto">Weather when you want it.</div>
-    </section>
+    <meta
+      name="description"
+      content="The homepage pf Preston Idaho with local weather and city information"
+    />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Proza+Libre&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <picture>
+        <img class="logo" src="images/rain.png" alt="weather icon" />
+      </picture>
+      <section class="headings">
+        <h1>Southeast Idaho Local</h1>
+        <div class="motto">Weather when you want it.</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigate">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#">Gallery</a></li>
+      </ul>
+    </nav>
 
-  </header>
-  <nav>
-    <ul class="navigate">
-      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Preston</a></li>
-      <li><a href="#">Soda Springs</a></li>
-      <li><a href="#">Fish Haven</a></li>
-      <li><a href="#">Storm Center</a></li>
-      <li><a href="#">Gallery</a></li>
-    </ul>
-  </nav>
-
-  <main>
-    <h2>Preston Idaho</h2>
+    <main>
+      <h2>Preston Idaho</h2>
       <div class="placeholder">Hero with Weather Summary</div>
       <div class="placeholder">5 Day Forecast</div>
       <div class="placeholder">Article</div>
       <div class="placeholder">Contact Information</div>
-
-  </main>
-  </main>
-  <footer>
-    <p>
-      &copy; <span id="current-date"></span> Southeast Idaho Local | WDD 230 | Cory Barton
-    </p>
-    <p>
-      <small>Last Updated:<span id="last-updated"></span> </small>
-    </p>
-  </footer>
-  <script src="js/preston.js"></script>
-</body>
+    </main>
+    <footer>
+      <p>&copy; 2020 | Southeast Idaho Local | WDD 230 | Cory Barton</p>
+      <p>
+        <span id="current-date"></span>
+      </p>
+    </footer>
+    <script src="js/preston.js"></script>
+  </body>
 </html>

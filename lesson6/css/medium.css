@@ -10,6 +10,7 @@
     display: block;
     flex: 1 1 100%;
     justify-content: center;
+    padding: 10px 0;
   }
 
   header {
@@ -18,9 +19,8 @@
 
   .contact .map {
     display: flex;
-    float: left;
     margin: 1rem;
-    width: 100%;
+    width: 50%;
     max-width: 750px;
   }
 }
