@@ -1,0 +1,232 @@
+body {
+  font-family: "Open Sans";
+}
+
+h1,
+h2 {
+  font-family: "Proza Libre";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #8bbbd9;
+  color: #274b59;
+  width: 100%;
+  justify-content: center;
+  flex-flow: column;
+}
+
+header section {
+  display: flex;
+  flex-flow: column;
+}
+
+header img {
+  width: 100%;
+}
+
+header section h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header section div {
+  align-self: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.back a {
+  color: #8bbbd9;
+}
+
+nav {
+  background-color: #274b59;
+  width: 100%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2px 10px 2px 10px;
+}
+
+.navigate {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navigate li:first-child {
+  display: none;
+}
+
+.navigate a {
+  color: #8bbbd9;
+  height: 100%;
+}
+
+.navigate a:hover {
+  background-color: #8bbbd9;
+  color: #274b59;
+}
+
+.navigate a:hover,
+.navigate .active {
+  background-color: #8bbbd9;
+  color: #274b59;
+}
+
+main,
+footer {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 766px;
+}
+
+main h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+main div {
+  display: block;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  margin: 5px;
+  padding: 5px;
+  align-content: flex-start;
+}
+
+footer {
+  background-color: #8bbbd9;
+  font-family: "Open Sans";
+  color: #274b59;
+  text-align: center;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.weatherSummary {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1em;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  max-width: 10em;
+  min-width: 10em;
+}
+
+.weatherhead {
+  grid-column: 1 / 3;
+}
+
+.weatherhead h3 {
+  margin: 0;
+}
+
+.column1 {
+  text-align: right;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.column2 {
+  text-align: left;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.column1 ul,
+.column2 ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.column1 ul li,
+.column2 ul li {
+  margin: 0;
+}
+
+.forcast {
+  display: none;
+}
+
+.weatherTable {
+  display: none;
+}
+
+.article {
+  display: block;
+  background: #274b59;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 1rem;
+}
+.article img {
+  border-radius: 0.5rem;
+  float: right;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact {
+  display: block;
+  background: #274b59;
+}
+
+.contact .map {
+  display: none;
+}
+
+.contact p img {
+  width: 2rem;
+}
+
+.social {
+  display: flex;
+  flex-flow: row;
+}
+
+.social img {
+  min-width: 20px;
+  max-width: 50px;
+  width: 100%;
+}
+
+#pancake {
+  background-color: grey;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}

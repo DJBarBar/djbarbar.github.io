@@ -1,0 +1,42 @@
+@media only screen and (min-width: 64rem) {
+  header img {
+    width: 100%;
+  }
+
+  header section h1 {
+    font-size: 4rem;
+  }
+
+  header section div {
+    font-size: 2rem;
+  }
+
+  main h2 {
+    font-size: 3em;
+  }
+
+  .forecast,
+  .weatherTable {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  table {
+    table-layout: auto;
+    border-collapse: collapse;
+    margin: 1rem;
+  }
+
+  th,
+  tr,
+  td {
+    border: 2px double #274b59;
+    padding: 0.5em;
+    align-content: center;
+    text-align: center;
+  }
+}
