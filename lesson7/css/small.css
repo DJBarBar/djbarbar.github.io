@@ -187,6 +187,7 @@ footer {
   border: 2px solid black;
   margin: 1rem;
   padding: 1rem;
+  color: whitesmoke;
 }
 .article img {
   border-radius: 0.5rem;
@@ -200,6 +201,7 @@ footer {
 .contact {
   display: block;
   background: #274b59;
+  color: whitesmoke;
 }
 
 .contact .map {
@@ -229,4 +231,26 @@ footer {
   justify-content: center;
   margin: auto;
   text-align: center;
+}
+
+.divgallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+}
+.gallery img {
+  margin: 2rem auto;
+  max-width: 400px;
+  width: 100%;
+  border: 2px solid #ffffff2a;
+  border-radius: 40% 20% 40% 20%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+figcaption {
+  display: none;
+  margin: 0;
 }

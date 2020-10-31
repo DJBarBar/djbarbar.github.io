@@ -113,7 +113,6 @@ footer {
 }
 
 .hero {
-  display: flex;
   position: relative;
   align-content: center;
   justify-content: center;
@@ -187,6 +186,7 @@ footer {
   border: 2px solid black;
   margin: 1rem;
   padding: 1rem;
+  color: whitesmoke;
 }
 .article img {
   border-radius: 0.5rem;
@@ -200,6 +200,7 @@ footer {
 .contact {
   display: block;
   background: #274b59;
+  color: whitesmoke;
 }
 
 .contact .map {
@@ -229,4 +230,5 @@ footer {
   justify-content: center;
   margin: auto;
   text-align: center;
+  padding: 10px;
 }

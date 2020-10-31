@@ -39,4 +39,18 @@
     align-content: center;
     text-align: center;
   }
+
+  .divgallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .maingallery {
+    max-width: 1300px;
+  }
+  figcaption {
+    display: block;
+    text-align: center;
+  }
+  .gallery img:hover {
+    box-shadow: 0em 0em 2em #000000;
+  }
 }

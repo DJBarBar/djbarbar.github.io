@@ -23,4 +23,12 @@
     width: 50%;
     max-width: 750px;
   }
+
+  .divgallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .maingallery {
+    max-width: 800px;
+  }
 }

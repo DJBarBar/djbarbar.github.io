@@ -6,7 +6,7 @@
     <title>Responsive Images and Font</title>
     <meta
       name="description"
-      content="The homepage pf Preston Idaho with local weather and city information"
+      content="The homepage of Preston Idaho with local weather and city information"
     />
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="../css/normalize.css" />
@@ -28,13 +28,19 @@
     </header>
     <nav>
       <ul class="navigate">
-        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#" class="active">Preston</a></li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li><a href="#">Storm Center</a></li>
-        <li><a href="#">Gallery</a></li>
+        <li>
+          <a href="#" style="text-decoration: none" onclick="toggleMenu()"
+            >&#9776; Menu</a
+          >
+        </li>
+        <li><a href="#" style="text-decoration: none">Home</a></li>
+        <li>
+          <a href="#" style="text-decoration: none" class="active">Preston</a>
+        </li>
+        <li><a href="#" style="text-decoration: none">Soda Springs</a></li>
+        <li><a href="#" style="text-decoration: none">Fish Haven</a></li>
+        <li><a href="#" style="text-decoration: none">Storm Center</a></li>
+        <li><a href="#" style="text-decoration: none">Gallery</a></li>
       </ul>
     </nav>
 
@@ -42,11 +48,11 @@
       <h2>Preston Idaho</h2>
       <div class="hero">
         <picture>
+          <source srcset="images/newhero_large.jpg" media="(min-width: 72em)" />
           <source
             srcset="images/newhero_medium.jpg"
-            media="(min-width: 46em) and (max-width: 72em)"
+            media="(min-width: 46em)"
           />
-          <source srcset="images/newhero_large.jpg" media="(min-width: 72em)" />
           <img src="images/newhero_small.jpg" alt="Responsive Images." />
         </picture>
         <div class="weatherSummary">
