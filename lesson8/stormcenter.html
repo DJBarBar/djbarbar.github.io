@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Storm Center Page</title>
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/navbreak.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div><span id="pancake"></span></div>
+    <header>
+      <picture>
+        <img class="logo" src="images/rain.png" alt="weather icon" />
+      </picture>
+      <section class="headings">
+        <h1>Heavy Rain Weather</h1>
+        <div class="motto">Weather when you want it.</div>
+      </section>
+    </header>
+    <nav>
+      <ul class="navigate">
+        <li>
+          <a href="#" onclick="toggleMenu()">&#9776; Menu</a>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="/lesson6/preston-6.html">Preston</a>
+        </li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li>
+          <a href="#" class="active">Storm Center</a>
+        </li>
+        <li>
+          <a href="/lesson7/gallery-7.html">Gallery</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h1>Storm Reporting</h1>
+        <form action="thanks.html" method="GET" title="Storm Reporting">
+          <fieldset>
+            <legend>Storm Chaser Identification</legend>
+            <label class="top" for="name"
+              >Full Name*<input
+                type="text"
+                id="name"
+                minlength="5"
+                pattern="[^0-9]+[a-zA-Z\s]{4,}"
+                required
+            /></label>
+            <label class="top" for="email"
+              >Email Address*<input
+                type="email"
+                id="email"
+                name="email"
+                minlength="12"
+                placeholder="youremail@mail.com"
+                required
+            /></label>
+            <label class="top" for="phone"
+              >Phone Number*<input
+                type="tel"
+                id="phone"
+                name="phone"
+                minlength="5"
+                placeholder="123456789"
+                required
+            /></label>
+            <label class="top" for="zip"
+              >Zip Code*<input type="number" id="zip" required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Storm Report</legend>
+            <label class="top" for="date"
+              >Storm Date:<input type="date" name="date" id="date"
+            /></label>
+            <div class="formdiv">
+              Storm Attributes<em>(select all that apply</em>
+              <label class="sbs" for="ff"
+                ><input type="checkbox" id="ff" name="ff" value="yes" />Flash
+                Flood</label
+              >
+              <label class="sbs" for="hail"
+                ><input
+                  type="checkbox"
+                  name="hail"
+                  id="hail"
+                  value="yes"
+                />Hail</label
+              >
+              <label class="sbs" for="hur"
+                ><input
+                  type="checkbox"
+                  name="hur"
+                  id="hur"
+                  value="yes"
+                />Hurricane</label
+              >
+              <label class="sbs" for="tstorm"
+                ><input
+                  type="checkbox"
+                  name="tstorm"
+                  id="tstorm"
+                  value="yes"
+                />Thunderstorm</label
+              >
+              <label class="sbs" for="tor"
+                ><input
+                  type="checkbox"
+                  name="tor"
+                  id="tor"
+                  value="yes"
+                />Tornado</label
+              >
+            </div>
+            <div class="formdiv">
+              <label class="slider" for="sslider"
+                >Storm Severity:
+                <em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;<input
+                  type="range"
+                  name="slifeRange"
+                  id="sslider"
+                  value="5"
+                  min="1"
+                  max="10"
+                  step="1"
+                  list="tickmarks"
+                  oninput="adjustSlider(this.value)"
+                />
+                <span id="slidervalue">5</span>
+                <datalist id="tickmarks">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </datalist>
+              </label>
+              <label for="region" class="top"
+                >Storm Region<select name="regionSelect" id="region">
+                  <option value="">&#9662;Select Option:&#9662;</option>
+                  <option value="0">Preston</option>
+                  <option value="1">Soda Springs</option>
+                  <option value="2">Fish Haven</option>
+                </select></label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Vital Information and Opinions</legend>
+            <label for="tArea" class="top">
+              <textarea
+                name="comments"
+                id="tArea"
+                cols="60"
+                rows="5"
+                placeholder="Additional Information, Comments, Concerns ... Enter here."
+              ></textarea>
+            </label>
+          </fieldset>
+          <input
+            type="submit"
+            value="Send Report"
+            class="submit"
+            name="SubmitButton"
+          />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2020 | Heavy Rain Weather | WDD 230 | Cory Barton</p>
+      <p>
+        <span id="current-date"></span>
+      </p>
+    </footer>
+    <script src="js/preston.js"></script>
+    <script src="js/pancake.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Open Sans", "Proza Libre"],
+        },
+      });
+    </script>
+  </body>
+</html>

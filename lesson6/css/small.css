@@ -60,13 +60,23 @@ nav ul {
   text-align: center;
 }
 
+.navigate li {
+  display: none;
+  list-style: none;
+}
+
 .navigate li:first-child {
   display: none;
+}
+
+.responsive li {
+  display: block;
 }
 
 .navigate a {
   color: #8bbbd9;
   height: 100%;
+  text-decoration: none;
 }
 
 .navigate a:hover {
@@ -78,6 +88,7 @@ nav ul {
 .navigate .active {
   background-color: #8bbbd9;
   color: #274b59;
+  padding: 3% 20%;
 }
 
 main,
