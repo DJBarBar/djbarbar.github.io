@@ -1,5 +1,5 @@
 function toggleMenu() {
-  document.getElementsByClassName("navigate")[0].classList.toggle("responsive");
+  document.getElementById("primaryNav").classList.toggle("hide");
 }
 
 const options = {
