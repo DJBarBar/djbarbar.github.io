@@ -364,3 +364,39 @@ figcaption {
   width: 80px;
   height: auto;
 }
+
+div.cityinfo {
+  display: flexbox;
+}
+
+div.cityinfo section {
+  flex-flow: column;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 2rem 0.125rem var(--color5);
+}
+
+.cityinfo section h2,
+.cityinfo section h3 {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.cityintro {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.cityintro img {
+  margin: 0.25rem;
+  width: 96%;
+  max-width: 300px;
+  border-radius: 0.75rem;
+}
+
+.cityintro p {
+  margin: 0;
+  padding: 0.25rem;
+}

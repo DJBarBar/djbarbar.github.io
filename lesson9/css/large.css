@@ -60,4 +60,8 @@
   .gallery img:hover {
     box-shadow: 0em 0em 2em #000000;
   }
+
+  .cityintro img {
+    max-width: 500px;
+  }
 }
