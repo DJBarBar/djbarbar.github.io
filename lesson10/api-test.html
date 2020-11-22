@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather API</title>
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      rel="shortcut icon"
+      href="/lesson8/images/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div><span id="pancake"></span></div>
+    <header>
+      <picture>
+        <img class="logo" src="/lesson4/images/rain.png" alt="weather icon" />
+      </picture>
+      <section class="headings">
+        <h1>Heavy Rain Weather</h1>
+        <div class="motto">Weather when you want it.</div>
+      </section>
+    </header>
+    <main>
+      <h1>OpenWeatherMap.org API Test</h1>
+      <p>
+        The current temperature in Roseville, California is
+        <span id="current-temp"></span>&deg; F
+      </p>
+      <hr />
+      <p>
+        Image Icon Path Test: <span id="imagesrc"></span> &nbsp;
+        <img src="" alt="" id="icon" />
+      </p>
+    </main>
+    <footer>
+      <p>
+        &copy; 2020 | Heavy Rain Weather | WDD 230 | Cory Barton |<a
+          href="/lesson9/home-wireframe.html"
+        >
+          Wireframes</a
+        >
+      </p>
+      <p>
+        <span id="current-date"></span>
+      </p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ["Open Sans", "Proza Libre"],
+        },
+      });
+    </script>
+    <script src="js/weatherapi.js"></script>
+    <script src="js/master.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+@media only screen and (min-width: 36em) {
+  .navigate {
+    display: flex;
+    flex-flow: row;
+    margin: auto;
+  }
+
+  .navigate li:first-child {
+    display: none;
+  }
+
+  .navigate li {
+    display: block;
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .navigate a {
+    border-bottom-left-radius: 10% 20%;
+    border-bottom-right-radius: 10% 20%;
+  }
+
+  .divgallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact .map {
+    display: flex;
+    float: left;
+    margin: 1rem;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .cityintro {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.cityintro {
+    padding: 1rem;
+  }
+
+  .cityinfo section:nth-child(even) > .cityintro {
+    flex-direction: row-reverse;
+  }
+}

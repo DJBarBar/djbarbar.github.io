@@ -1,0 +1,402 @@
+body {
+  font-family: "Open Sans";
+}
+
+h1,
+h2 {
+  font-family: "Proza Libre";
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #8bbbd9;
+  color: #274b59;
+  width: 100%;
+  justify-content: center;
+  flex-flow: column;
+}
+
+header section {
+  display: flex;
+  flex-flow: column;
+}
+
+header img {
+  width: 100%;
+}
+
+header section h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+header section div {
+  align-self: center;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.back a {
+  color: #8bbbd9;
+}
+
+nav {
+  background-color: #274b59;
+  width: 100%;
+  margin: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin: auto;
+  padding: 2px 10px 2px 10px;
+}
+
+.navigate {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navigate li {
+  display: none;
+  list-style: none;
+}
+
+.navigate li:first-child {
+  display: none;
+}
+
+.responsive li {
+  display: block;
+}
+
+.navigate a {
+  color: #8bbbd9;
+  height: 100%;
+  text-decoration: none;
+}
+
+.navigate a:hover {
+  background-color: #8bbbd9;
+  color: #274b59;
+}
+
+.navigate a:hover,
+.navigate .active {
+  background-color: #8bbbd9;
+  color: #274b59;
+  padding: 4%;
+}
+
+main,
+footer {
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 766px;
+}
+
+main h2 {
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+form fieldset {
+  border: 1px solid #8bbbd9;
+  border-top-left-radius: 20% 20%;
+  border-top-right-radius: 20% 20%;
+  border-bottom-right-radius: 20% 20%;
+  border-bottom-left-radius: 20% 20%;
+  margin: 2rem 0;
+  padding: 2rem;
+}
+
+form legend {
+  font-size: larger;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  color: #002503;
+}
+
+form label.top {
+  display: block;
+  padding: 0.5rem;
+  color: #555555;
+  width: 96%;
+  max-width: 20rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  display: block;
+  color: #000000;
+  width: 96%;
+  max-width: 20rem;
+  border: 1px solid #555555;
+  border-top-left-radius: 20% 10%;
+  border-top-right-radius: 20% 10%;
+  border-bottom-right-radius: 20% 10%;
+  border-bottom-left-radius: 20% 10%;
+  padding: 0.75rem;
+}
+
+form label.top input:required {
+  border-left: 3px double #ff0000;
+}
+
+form label.top input:required:valid {
+  border-left: 3px solid #8bbbd9;
+}
+
+form label.slider {
+  display: block;
+  margin: 2rem 0 0 0;
+}
+
+form label.slider input {
+  display: block;
+  max-width: 20rem;
+  width: 96%;
+}
+
+form label.slider span {
+  max-width: 20rem;
+  width: 96%;
+}
+
+form label.sbs {
+  display: block;
+  margin: 0.25rem;
+  color: #000000;
+}
+
+form label.sbs input {
+  margin: 0.25rem 0.75rem 0 0;
+}
+
+form div.formdiv {
+  margin: 0 1rem;
+}
+
+input.submit {
+  max-width: 20rem;
+  margin: 0 0 2rem 2%;
+  color: black;
+  background-color: #8bbbd9;
+  border: 1px solid black;
+  border-top-left-radius: 20% 10%;
+  border-top-right-radius: 20% 10%;
+  border-bottom-right-radius: 20% 10%;
+  border-bottom-left-radius: 20% 10%;
+  padding: 0.75rem;
+}
+
+main div {
+  display: block;
+  border: 1px solid black;
+  background-color: whitesmoke;
+  margin: 5px;
+  padding: 5px;
+  align-content: flex-start;
+}
+
+footer {
+  background-color: #8bbbd9;
+  font-family: "Open Sans";
+  color: #274b59;
+  text-align: center;
+}
+
+.hero {
+  position: relative;
+  align-content: center;
+  justify-content: center;
+}
+
+.hero picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.weatherSummary {
+  display: grid;
+  grid-template-columns: auto;
+  margin: 0;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1em;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  max-width: 10em;
+  min-width: 10em;
+}
+
+.weatherhead {
+  grid-column: 1 / 3;
+}
+
+.weatherhead h3 {
+  margin: 0;
+}
+
+.column1 {
+  text-align: right;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.column2 {
+  text-align: left;
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+.column1 ul,
+.column2 ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+.column1 ul li,
+.column2 ul li {
+  margin: 0;
+}
+
+.forcast {
+  display: none;
+}
+
+.weatherTable {
+  display: none;
+}
+
+.article {
+  display: block;
+  background: #274b59;
+  border: 2px solid black;
+  margin: 1rem;
+  padding: 1rem;
+  color: whitesmoke;
+}
+.article img {
+  border-radius: 0.5rem;
+  float: right;
+  width: 100%;
+  max-width: 300px;
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact {
+  display: block;
+  background: #274b59;
+  color: whitesmoke;
+}
+
+.contact .map {
+  display: none;
+}
+
+.contact p img {
+  width: 2rem;
+}
+
+.social {
+  display: flex;
+  flex-flow: row;
+}
+
+.social img {
+  min-width: 20px;
+  max-width: 50px;
+  width: 100%;
+}
+
+#pancake {
+  background-color: grey;
+  display: flex;
+  flex-flow: column;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+.divgallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  align-content: center;
+}
+.divgallery figure {
+  margin: auto;
+}
+.gallery img {
+  margin: 2rem auto;
+  max-width: 300px;
+  width: 100%;
+  border: 2px solid #ffffff2a;
+  border-radius: 20% 20% 20% 20%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+figcaption {
+  display: none;
+  margin: 0;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+}
+
+div.cityinfo {
+  display: flexbox;
+}
+
+div.cityinfo section {
+  flex-flow: column;
+  margin: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0rem 2rem 0.125rem var(--color5);
+}
+
+.cityinfo section h2,
+.cityinfo section h3 {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+.cityintro {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.cityintro img {
+  margin: 0.25rem;
+  width: 96%;
+  max-width: 300px;
+  border-radius: 0.75rem;
+}
+
+.cityintro p {
+  margin: 0;
+  padding: 0.25rem;
+}
