@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Gallery Page</title>
+    <meta
+      name="description"
+      content="The homepage of Preston Idaho with local weather and city information"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/small.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/large.css"
+    />
+  </head>
+  <body>
+    <div><span id="party"></span></div>
+    <header>
+      <a href="../index.html"
+        ><img src="/lesson4/images/rain.png" alt="logo"
+      /></a>
+      <div>
+        <h1>6by9Weather</h1>
+        <div>Weather is the answer to life, the universe, and everything.</div>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/preston.html">Preston</a></li>
+        <li><a href="../pages/soda_springs.html">Soda Springs</a></li>
+        <li><a href="../pages/fish_haven.html">Fish Haven</a></li>
+        <li><a href="../pages/stormcenter.html">Storm Center</a></li>
+        <li><a href="#" class="urhere">Gallery</a></li>
+      </ul>
+    </nav>
+    <main class="maingallery">
+      <div class="divgallery">
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Calm sky during the daytime"
+            data-src="images/cloudy.jpg"
+          />
+          <figcaption>Cloudy Sky</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Green leaf tree"
+            data-src="images/forestroad.jpg"
+          />
+          <figcaption>Forest with a road</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Clouds during golden hour"
+            data-src="images/goldensky.jpg"
+          />
+          <figcaption>Golden Sky</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Lightning strike"
+            data-src="images/lightning.jpg"
+          />
+          <figcaption>Lightning Strike</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Lightning at night"
+            data-src="images/lightningnight.jpg"
+          />
+          <figcaption>Lightning at night</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Rain clouds"
+            data-src="images/rainclouds.jpg"
+          />
+          <figcaption>Rain clouds</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Bus with snow on it"
+            data-src="images/snowbus.jpg"
+          />
+          <figcaption>Warming and Thawing</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Shallow water with rain"
+            data-src="images/waterrain.jpg"
+          />
+          <figcaption>Bus with snow on it</figcaption>
+        </figure>
+        <figure class="gallery">
+          <img
+            src="images/placeholder.jpg"
+            alt="Snow on the umbrella"
+            data-src="images/snowumbrella.jpg"
+          />
+          <figcaption>Snow on the umbrella</figcaption>
+        </figure>
+      </div>
+    </main>
+    <footer>
+      <div>
+        &copy; <span id="thisyear"></span> HeavyRain.com | WDD 230 | Cory Barton
+      </div>
+      <span id="currentdate"></span>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/master.js"></script>
+  </body>
+</html>

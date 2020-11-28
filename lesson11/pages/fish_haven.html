@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Cory Barton" />
+    <meta name="creation date" content="2020-11-28" />
+    <meta name="city_code" content="5585010" />
+    <meta name="city_name" content="Fish Haven" />
+    <meta
+      name="description"
+      content="Cory Barton Week 11 Weather API Insertion"
+    />
+    <title>Fish Haven Weather Page - Cory Barton</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/small.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/large.css"
+    />
+    <link rel="shortcut icon" href="/lesson8/images/favicon.ico" />
+  </head>
+
+  <body>
+    <div><span id="party"></span></div>
+    <header>
+      <a href="../index.html"
+        ><img
+          src="../images/iconfinder_applications-science_28735.png"
+          alt="logo"
+      /></a>
+      <div>
+        <h1>Heavy Rain</h1>
+        <div>Weather is the answer to life, the universe, and everything.</div>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/preston.html">Preston</a></li>
+        <li><a href="../pages/soda_springs.html">Soda Springs</a></li>
+        <li><a href="#" class="urhere">Fish Haven</a></li>
+        <li><a href="../pages/stormcenter.html">Storm Center</a></li>
+        <li><a href="../pages/gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h2>Fish Haven Idaho</h2>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="../images/lake_fall_500.jpg"
+            media="(min-width: 22em) and (max-width: 40em)"
+          />
+          <source
+            srcset="../images/lake_fall_750.jpg"
+            media="(min-width: 40em)"
+          />
+          <img src="../images/lake_fall_300.jpg" alt="Responsive Images." />
+        </picture>
+        <div class="summary">
+          <div class="sumhead">
+            <h3>Weather Summary</h3>
+          </div>
+          <div class="column1">
+            <ul>
+              <li>Conditions:</li>
+              <li>Temp:</li>
+              <li>High:</li>
+              <li>Wind Chill:</li>
+              <li>Humidity:</li>
+              <li>Wind Speed:</li>
+            </ul>
+          </div>
+          <div class="column2">
+            <ul>
+              <li id="ccondition"></li>
+              <li id="ctemp"></li>
+              <li id="htemp"></li>
+              <li id="wchill"></li>
+              <li id="humid"></li>
+              <li id="wspeed"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="forecast">
+        <div>
+          <h3>5 Day Forecast</h3>
+        </div>
+        <table class="forecastable">
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="local_events">
+        <h3>Upcoming Events</h3>
+        <hr />
+        <ul class="event_list"></ul>
+      </div>
+      <div class="news"></div>
+      <div class="news"></div>
+      <div class="info">
+        <h2>Little Fish Haven, Idaho, is paradise for residents</h2>
+        <h3>
+          By Deseret News | Dec 26, 2000, 3:35pm MST<br />
+          <i>Kurt Friedemann Idaho State Journal</i>
+        </h3>
+        <div>
+          <img src="../images/snowy_400.jpg" alt="A Snowy winter on its way" />
+          <p>
+            FISH HAVEN, Idaho — It's an undiscovered paradise. Most people who
+            drive by recognize the raw beauty of a place ringed by high desert
+            mountains and bordered by the shores of a vast natural lake.
+          </p>
+          <p>
+            In winter the hills outside this small paradise echo with the sharp
+            whine of snow machines and in the summer thousands of tourists ply
+            the lake's bright blue waters with water skis or fishing poles.
+          </p>
+          <p>But they don't live there. It's different living in Fish Haven.</p>
+          <p>
+            The little town sits just on the Idaho side of U.S. Highway 89
+            tucked in between Bear Lake's west side and the mountains.
+          </p>
+          <p>
+            It's not technically a city or a town, it's really nothing more than
+            the proverbial wide spot in the road. But people call it a town even
+            though there isn't a city council, just the Bear Lake County
+            Commission that oversees development there.
+          </p>
+          <a
+            href="https://www.deseret.com/2000/12/26/19546274/little-fish-haven-idaho-is-paradise-for-residents"
+            >Continue reading...</a
+          >
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>
+        &copy; <span id="thisyear"></span> HeavyRain.com | WDD 230 | Cory Barton
+      </div>
+      <span id="currentdate"></span>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/master.js"></script>
+  </body>
+</html>

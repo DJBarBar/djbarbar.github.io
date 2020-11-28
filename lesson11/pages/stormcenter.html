@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Cory Barton" />
+    <meta name="creation date" content="2020-11-28" />
+    <meta name="description" content="Cory Barton Week 11 Finishing Touches" />
+    <title>Storm Center Reporting - Cory Barton</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/main.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/small.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../css/large.css"
+    />
+    <link rel="shortcut icon" href="/lesson8/images/favicon.ico" />
+  </head>
+
+  <body>
+    <div><span id="party"></span></div>
+    <header>
+      <a href="../index.html"
+        ><img src="/lesson4/images/rain.png" alt="logo"
+      /></a>
+      <div>
+        <h1>Heavy Rain</h1>
+        <div>Weather is the answer to life, the universe, and everything.</div>
+      </div>
+    </header>
+    <nav>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../pages/preston.html">Preston</a></li>
+        <li><a href="../pages/soda_springs.html">Soda Springs</a></li>
+        <li><a href="../pages/fish_haven.html">Fish Haven</a></li>
+        <li><a href="#" class="urhere">Storm Center</a></li>
+        <li><a href="../pages/gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <main>
+      <div>
+        <h1>Storm Reporting</h1>
+        <form
+          action="../pages/thanks.html"
+          method="get"
+          title="Storm Reporting"
+        >
+          <fieldset>
+            <legend>Storm Chaser Identification</legend>
+            <label class="top" for="name"
+              >Full Name*<input
+                type="text"
+                id="name"
+                name="name"
+                minlength="5"
+                pattern="[^0-9]+[a-zA-Z\s]{4,}"
+                required
+            /></label>
+            <label class="top" for="email"
+              >Email Address*<input
+                type="email"
+                id="email"
+                name="email"
+                minlength="12"
+                placeholder="sender@mail.com"
+                required
+            /></label>
+            <label class="top" for="phone"
+              >Phone Number*<input
+                type="tel"
+                id="phone"
+                name="phone"
+                minlength="5"
+                placeholder="1234567890"
+                required
+            /></label>
+            <label class="top" for="zip"
+              >Zip Code*<input type="number" id="zip" name="zip" required
+            /></label>
+          </fieldset>
+          <fieldset>
+            <legend>Storm Report</legend>
+            <label class="top" for="date"
+              >Storm Date:<input type="date" id="date" name="date"
+            /></label>
+            <div class="formdiv">
+              Storm Attributes<em>(select all that apply)</em>
+              <label class="sbs" for="ff"
+                ><input id="ff" type="checkbox" name="ff" value="yes" />Flash
+                Flood</label
+              >
+              <label class="sbs" for="hail"
+                ><input
+                  id="hail"
+                  type="checkbox"
+                  name="hail"
+                  value="yes"
+                />Hail</label
+              >
+              <label class="sbs" for="hur"
+                ><input
+                  id="hur"
+                  type="checkbox"
+                  name="hur"
+                  value="yes"
+                />Hurricane</label
+              >
+              <label class="sbs" for="tstorm"
+                ><input
+                  id="tstorm"
+                  type="checkbox"
+                  name="tstorm"
+                  value="yes"
+                />Thunderstorm</label
+              >
+              <label class="sbs" for="tor"
+                ><input
+                  id="tor"
+                  type="checkbox"
+                  name="tor"
+                  value="yes"
+                />Tornado</label
+              >
+            </div>
+            <div class="formdiv">
+              <label class="slider" for="sslider">
+                Storm Severity:
+                <em>(slide to severity level)</em> &nbsp;&nbsp;&nbsp;<input
+                  type="range"
+                  id="sslider"
+                  name="slideRange"
+                  value="5"
+                  min="1"
+                  max="10"
+                  step="1"
+                  list="tickmarks"
+                  oninput="adjustSlider(this.value)"
+                  onchange="adjustSlider(this.value)"
+                />
+                <span id="slidervalue">5</span>
+                <datalist id="tickmarks">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </datalist></label
+              >
+              <label class="top" for="region"
+                >Storm Region
+                <select id="region" name="regionSelect">
+                  <option value="">&#9662;Select Option:&#9662;</option>
+                  <option value="0">Preston</option>
+                  <option value="1">Soda Springs</option>
+                  <option value="2">Fish Haven</option>
+                </select></label
+              >
+            </div>
+            <div class="formdiv">
+              Are You In-Danger?
+              <label class="sbs" for="yes"
+                ><input type="radio" id="yes" name="dangerlevel" />Yes</label
+              >
+              <label class="sbs" for="maybe"
+                ><input
+                  type="radio"
+                  id="maybe"
+                  name="dangerlevel"
+                />Maybe</label
+              >
+              <label class="sbs" for="no"
+                ><input type="radio" id="no" name="dangerlevel" />No</label
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Vital Information and Opinions</legend>
+            <label class="top" for="tArea">
+              <textarea
+                id="tArea"
+                name="comments"
+                cols="60"
+                rows="5"
+                placeholder="Additional Information, Comments, or Concerns ... Enter here."
+              ></textarea>
+            </label>
+          </fieldset>
+
+          <input
+            type="submit"
+            value="Send Report"
+            class="sbmit"
+            name="submitButton"
+          />
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div>
+        &copy; <span id="thisyear"></span> HeavyRain.com | WDD 230 | Cory Barton
+      </div>
+      <span id="currentdate"></span>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="../js/master.js"></script>
+  </body>
+</html>
