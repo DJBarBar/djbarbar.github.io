@@ -1,21 +1,21 @@
-@media only screen and (min-width: 36em) {
-  .navigate {
+@media only screen and (min-width: 36rem) {
+  .navigation {
     display: flex;
     flex-flow: row;
     margin: auto;
   }
 
-  .navigate li:first-child {
+  .navigation li:first-child {
     display: none;
   }
 
-  .navigate li {
+  .navigation li {
     display: block;
     flex: 1 1 100%;
     justify-content: center;
   }
 
-  .navigate a {
+  .navigation a {
     border-bottom-left-radius: 10% 20%;
     border-bottom-right-radius: 10% 20%;
   }

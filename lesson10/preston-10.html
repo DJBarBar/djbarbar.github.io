@@ -3,76 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Preston</title>
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/small.css" />
-    <link rel="stylesheet" href="css/medium.css" />
-    <link rel="stylesheet" href="css/large.css" />
-    <link
-      rel="shortcut icon"
-      href="/lesson8/images/favicon.ico"
-      type="image/x-icon"
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="Cory Barton" />
+    <meta name="creation date" content="2020-11-28" />
+    <meta name="city_code" content="0" />
+    <meta name="city_name" content="Home Page" />
+    <meta
+      name="description"
+      content="Cory Barton Week 9-14 Finishing Touches"
     />
+    <title>HeavyRain.com Home Page - Cory Barton</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/small.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/medium.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/large.css"
+    />
+    <link rel="shortcut icon" href="/lesson8/images/favicon.ico" />
   </head>
+
   <body>
-    <div><span id="pancake"></span></div>
+    <div><span id="party"></span></div>
     <header>
-      <picture>
-        <img class="logo" src="/lesson4/images/rain.png" alt="weather icon" />
-      </picture>
-      <section class="headings">
-        <h1>Heavy Rain Weather</h1>
-        <div class="motto">Weather when you want it.</div>
-      </section>
+      <a href="index.html"><img src="/lesson4/images/rain.png" alt="logo" /></a>
+      <div>
+        <h1>Heavy Rain</h1>
+        <div>Weather is the answer to life, the universe, and everything.</div>
+      </div>
     </header>
     <nav>
-      <ul class="navigate">
-        <li>
-          <a href="#" onclick="toggleMenu()">&#9776; Menu</a>
-        </li>
-        <li><a href="#" class="active">Home</a></li>
-        <li>
-          <a href="/lesson6/preston-6.html">Preston</a>
-        </li>
-        <li><a href="#">Soda Springs</a></li>
-        <li><a href="#">Fish Haven</a></li>
-        <li>
-          <a href="/lesson8/stormcenter.html">Storm Center</a>
-        </li>
-        <li>
-          <a href="/lesson7/gallery-7.html">Gallery</a>
-        </li>
+      <ul class="navigation">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#" class="urhere">Home</a></li>
+        <li><a href="pages/preston.html">Preston</a></li>
+        <li><a href="pages/soda_springs.html">Soda Springs</a></li>
+        <li><a href="pages/fish_haven.html">Fish Haven</a></li>
+        <li><a href="pages/stormcenter.html">Storm Center</a></li>
+        <li><a href="pages/gallery.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
-      <h1>Heavy Rain Weather</h1>
+      <h1>Welcome to the Heavy Rain Page</h1>
       <p>
-        Proudly pinpointing weather our rural regions. Visit our cities below.
+        Proudly representing the micro climates of our rural regions. Visit our
+        defined cities below.
       </p>
+      <div class="topnews">
+        <article>
+          <a
+            href="https://www.accuweather.com/en/us/preston/83263/weather-warnings/332619"
+          >
+            <h2>
+              Winter Weather Advisory in effect until Saturday, 5:00 AM MST.
+              <br />
+              Source: U.S. National Weather Service
+            </h2>
+          </a>
+          <p>
+            ...WINTER WEATHER ADVISORY REMAINS IN EFFECT UNTIL 5 AM MST
+            SATURDAY...
+            <br />
+            * WHAT...Snow expected this afternoon and tonight. Additional snow
+            accumulations of 1 to 3 inches. Some blowing and drifting snow
+            remains possible.
+            <br />
+            * WHERE...The cities of Idaho Falls, Rexburg, St. Anthony, McCammon,
+            Downey, Lava Hot Springs, Malad, Preston, and Soda Springs.
+            <br />
+            * WHEN...Until 5 AM MST Saturday.
+            <br />
+            * ADDITIONAL DETAILS...Untreated roadways may lead to snowy, slick
+            road conditions. Slow down, allow extra time to reach your
+            destination today and leave additional space between the car in
+            front of you.
+            <br />
+            PRECAUTIONARY/PREPAREDNESS ACTIONS... The latest road conditions can
+            be obtained by calling 5 1 1.
+          </p>
+        </article>
+      </div>
+
       <div class="cityinfo"></div>
+      <div class="contact">
+        <h2>Contact Us</h2>
+        <div class="map">
+          <img
+            src="images/map.jpg"
+            alt="map of Preston, Fish Haven, and Soda Springs"
+          />
+        </div>
+        <div class="name6x9">
+          <p>
+            <img src="images/location_red_pin.png" alt="location icon" />Heavy
+            Rain
+          </p>
+        </div>
+        <div class="address6x9">
+          <p>4242 Rainbow Ridge Road</p>
+          <p>Dent, ID 17598-0205</p>
+          <br />
+          <p>&#9743; 131-312-7042</p>
+          <p>
+            &#9993;<a href="mailto:mailus@emaill.com"> mailus@emaill.com</a>
+          </p>
+        </div>
+        <div class="socially">
+          <a href="https://www.facebook.com"
+            ><img src="images/facebook.png" alt="facebook icon"
+          /></a>
+          <a href="https://www.google.com/"
+            ><img src="images/google-plus.png" alt="google icon"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="images/twitter.png" alt="twitter icon"
+          /></a>
+          <a href="https://www.youtube.com/"
+            ><img src="images/youtube.png" alt="youtube icon"
+          /></a>
+        </div>
+      </div>
     </main>
     <footer>
-      <p>
-        &copy; 2020 | Heavy Rain Weather | WDD 230 | Cory Barton |<a
-          href="/lesson9/home-wireframe.html"
-        >
-          Wireframes</a
-        >
-      </p>
-      <p>
-        <span id="current-date"></span>
-      </p>
+      <div>
+        &copy; <span id="thisyear"></span> HeavyRain.com | WDD 230 | Cory Barton
+        |
+      </div>
+      <span id="currentdate"></span>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ["Open Sans", "Proza Libre"],
-        },
-      });
-    </script>
     <script src="js/master.js"></script>
   </body>
 </html>
