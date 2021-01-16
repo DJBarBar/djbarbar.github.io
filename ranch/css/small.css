@@ -1,17 +1,22 @@
-header,
-footer {
-  font-family: "Proza Libre", sans-serif;
-  font-size: 15px;
-  background-color: #8bbbd9;
-  text-align: center;
-  border-radius: 5px;
-  border: 2px solid black;
-  border-radius: 5px;
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
+/* body rules */
 
 body {
   font-family: Verdana;
   font-size: 16px;
+}
+
+/* header rules */
+
+header {
+  background-color: #995d76;
+  color: #bdc6a9;
+  padding: 1rem 2%;
 }
 
 header h1 {
@@ -20,4 +25,61 @@ header h1 {
 
 header h2 {
   margin: 0;
+}
+/* navigation rules */
+nav {
+  background-color: #111;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+nav li {
+  list-style-type: none;
+}
+nav li.active {
+  background-color: #333;
+}
+nav a {
+  display: block;
+  padding: 0.8rem 0; /* 44 min heght */
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+/* main rules */
+main {
+  padding: 1rem 2%;
+  display: block;
+}
+main h1 {
+  color: #17a8e4;
+}
+main figure img {
+  width: 100%;
+}
+main figure {
+  width: 100%;
+  margin: 0;
+}
+main figcaption {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 2%;
+  background-color: #995d76;
+  color: #bdc6a9;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
