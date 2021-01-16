@@ -14,8 +14,8 @@ body {
 /* header rules */
 
 header {
-  background-color: #995d76;
-  color: #bdc6a9;
+  background-color: #8bbbd9;
+  color: black;
   padding: 1rem 2%;
 }
 
@@ -43,7 +43,7 @@ nav li.active {
 nav a {
   display: block;
   padding: 0.8rem 0; /* 44 min heght */
-  color: #eee;
+  color: black;
   text-align: center;
   text-decoration: none;
 }
@@ -74,8 +74,8 @@ main figcaption {
 footer {
   text-align: center;
   padding: 1rem 2%;
-  background-color: #995d76;
-  color: #bdc6a9;
+  background-color: #8bbbd9;
+  color: black;
 }
 
 .clearfix::after {
