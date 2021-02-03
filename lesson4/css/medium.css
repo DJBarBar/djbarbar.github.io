@@ -6,6 +6,13 @@
     margin: auto;
   }
 
+  .navigate li {
+    display: block;
+    flex: 1 1 100%;
+    justify-content: center;
+    padding: 10px 0;
+  }
+
   header {
     flex-flow: row;
   }

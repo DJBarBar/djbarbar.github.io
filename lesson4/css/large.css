@@ -11,23 +11,6 @@
     font-size: 2rem;
   }
 
-  nav button {
-    display: none;
-  }
-  nav ul.hide {
-    display: flex;
-  }
-  nav ul li {
-    float: left;
-    flex: 1 1 100%;
-    justify-content: space-evenly;
-  }
-  nav ul li a {
-    border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-    padding: 0.6rem 1rem;
-  }
-
   main h2 {
     font-size: 3em;
   }
