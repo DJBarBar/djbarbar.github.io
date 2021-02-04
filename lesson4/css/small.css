@@ -41,6 +41,10 @@ header section div {
   color: #8bbbd9;
 }
 
+nav {
+  background: #8bbbd9;
+}
+
 nav button {
   padding: 10px;
   margin: 0 5px;
