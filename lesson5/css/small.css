@@ -42,53 +42,49 @@ header section div {
 }
 
 nav {
-  background-color: #274b59;
-  width: 100%;
-  margin: auto;
+  background: #274b59;
+}
+
+nav button {
+  padding: 10px;
+  margin: 0 5px;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 nav ul {
-  display: flex;
-  flex-flow: column;
-  justify-content: space-between;
-  margin: auto;
-  padding: 2px 10px 2px 10px;
-}
-
-.navigate {
   list-style-type: none;
-  text-align: center;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
-.navigate li {
-  display: none;
-  list-style: none;
-}
-
-.navigate li:first-child {
-  display: none;
-}
-
-.responsive li {
+nav ul li a {
   display: block;
-}
-
-.navigate a {
-  color: #8bbbd9;
-  height: 100%;
+  padding: 0.8rem 2%;
   text-decoration: none;
+  color: #8bbbd9;
+  border-top: 1px solid rgba(2, 64, 89, 0.4);
+  text-align: center;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  font-weight: bold;
 }
 
-.navigate a:hover {
+nav ul li.active a {
   background-color: #8bbbd9;
-  color: #274b59;
+  color: #fff;
 }
 
-.navigate a:hover,
-.navigate .active {
+nav ul li a:hover {
   background-color: #8bbbd9;
-  color: #274b59;
-  padding: 3% 20%;
+  color: #fff;
+}
+
+nav ul.hide {
+  display: none;
 }
 
 main,
@@ -206,6 +202,7 @@ footer {
   display: block;
   background: #274b59;
   color: whitesmoke;
+  text-decoration: none;
 }
 
 .contact .map {
