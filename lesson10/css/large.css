@@ -1,102 +1,115 @@
-@media only screen and (min-width: 50em) {
-  :root {
-    --color1: #8bbbd9;
-    --color2: #8bd9d0;
-    --color3: #002503;
-    --color4: #d9415d;
-    --color5: #d9d08b;
-    --font1: "Open Sans", sans-serif;
-    --font2: "Proza Libre", sans-serif;
+@media only screen and (min-width: 64rem) {
+  nav button {
+    display: none;
   }
 
-  header img {
-    width: 100%;
-  }
-
-  header div h1 {
-    font-size: 5rem;
-  }
-
-  main h2 {
-    font-size: 4em;
-  }
-
-  .forecast,
-  .forecastable {
+  nav ul.hide {
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 1rem;
   }
 
-  table {
-    table-layout: auto;
-    margin: 1rem;
-  }
-
-  tbody {
-    width: 36rem;
-  }
-
-  th,
-  tr,
-  td {
-    border: 1px solid var(--color1);
-    padding: 0.5rem 1rem 0.5rem 1rem;
-    align-content: center;
-    text-align: center;
-    width: 16rem;
-    border-top-left-radius: 20% 10%;
-    border-top-right-radius: 20% 10%;
-    border-bottom-right-radius: 20% 10%;
-    border-bottom-left-radius: 20% 10%;
-  }
-
-  tr:first-child {
-    background-color: var(--color1);
-    color: var(--color2);
-    font-family: var(--font1);
-    font-size: 1.5rem;
-    text-shadow: 2px 2px 6px var(--color3);
-  }
-
-  tr:nth-child(even) > td {
-    border: none;
-  }
-
-  tr:last-child {
-    background-color: var(--color5);
-    color: var(--color1);
-  }
-
-  .divgallery {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .maingallery {
-    max-width: 1300px;
-  }
-
-  figcaption {
-    display: block;
-    text-align: center;
-  }
-
-  .gallery img:hover {
-    box-shadow: 0em 0em 2em #000000;
-  }
-
-  .contact .map {
-    display: flex;
+  nav ul li {
     float: left;
-    margin: 1rem;
-    width: 100%;
-    max-width: 300px;
+    flex: 1 1 100%;
+    justify-content: space-evenly;
   }
 
-  .cityintro img {
-    max-width: 500px;
+  nav ul li a {
+    border: none;
+    padding: 0.6rem 1rem;
+  }
+
+  .logo {
+    width: 10rem;
+    margin-bottom: 0;
+  }
+
+  .fiveday {
+    background-color: #77bdd9;
+    padding: 10px 0 20px 0;
+    max-width: 1000px;
+  }
+
+  .fiveday table {
+    background-color: #fff;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .motto {
+    font-size: 1.5rem;
+  }
+
+  .gallerygrid {
+    grid-template-columns: repeat(3, 1fr);
+    align-content: center;
+    justify-content: center;
+  }
+
+  .gallerybox:hover {
+    box-shadow: 0 0 50px #333;
+  }
+
+  form label.sbs {
+    padding: 0.2rem 0;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1000px;
+    grid-gap: 20px;
+  }
+
+  .cards section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 15% 20% 15%;
+    width: 300px;
+    padding: 0 0 10px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .cards img {
+    object-fit: cover;
+    width: 300px;
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    grid-row: 1;
+  }
+
+  .cards section:nth-child(odd) img {
+    grid-column: 1;
+  }
+
+  .cards section:nth-child(even) img {
+    border-radius: 8px 8px 0 0;
+  }
+
+  .cards section:nth-child(even) h2,
+  .cards section:nth-child(even) p,
+  .cards section:nth-child(even) .townStats {
+    grid-column: 1;
+  }
+
+  .townStats {
+    grid-row: 4;
+    width: 90%;
+  }
+
+  .cards p {
+    grid-row: 3;
+    padding: 0 15px 15px;
+  }
+
+  .cards h2 {
+    grid-row: 2;
+    margin-top: 20px;
   }
 }

@@ -1,47 +1,162 @@
-@media only screen and (min-width: 36rem) {
-  .navigation {
-    display: flex;
-    flex-flow: row;
-    margin: auto;
+@media only screen and (min-width: 35em) {
+  h1 {
+    font-size: 2.5rem;
   }
 
-  .navigation li:first-child {
-    display: none;
+  h2 {
+    font-size: 2rem;
   }
 
-  .navigation li {
-    display: block;
-    flex: 1 1 100%;
-    justify-content: center;
+  body {
+    line-height: 1.5;
   }
 
-  .navigation a {
-    border-bottom-left-radius: 10% 20%;
-    border-bottom-right-radius: 10% 20%;
+  .motto {
+    font-size: 1.2rem;
   }
 
-  .divgallery {
-    grid-template-columns: repeat(2, 1fr);
+  .logo {
+    width: 160px;
   }
 
-  .contact .map {
-    display: flex;
-    float: left;
-    margin: 1rem;
+  .hero-ph {
+    margin: 0px auto;
     width: 100%;
-    max-width: 300px;
   }
 
-  .cityintro {
-    display: flex;
-    flex-direction: row;
+  h3 {
+    text-align: center;
   }
 
-  div.cityintro {
-    padding: 1rem;
+  .fiveday {
+    display: block;
+    margin: 0;
   }
 
-  .cityinfo section:nth-child(even) > .cityintro {
-    flex-direction: row-reverse;
+  .fiveday table {
+    text-align: center;
+    border: 1px solid #011c26;
+  }
+  .fiveday [id^="icon"] {
+    width: 100px;
+  }
+
+  table th {
+    background-color: #024059;
+    color: #fff;
+  }
+
+  table img {
+    width: 50%;
+  }
+
+  table,
+  th {
+    border: 1px solid #011c26;
+    border-collapse: collapse;
+  }
+
+  table td {
+    border-right: 1px solid #011c26;
+  }
+
+  table {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .articleCity {
+    max-width: 960px;
+    margin: 20px 0 20px;
+    padding: 30px 30px;
+  }
+
+  .articleCity img {
+    float: right;
+    width: 300px;
+    margin: 0 0 15px 50px;
+  }
+
+  .articleCity h3 {
+    text-align: left;
+  }
+
+  .contactInfo {
+    margin: 30px 30px 0;
+    grid-column: 3/5;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 30px 0 0;
+    height: 300px;
+  }
+
+  .map {
+    width: 250px;
+    display: block;
+    grid-column: 2/3;
+    align-self: center;
+    border: 1px solid #77bdd9;
+  }
+
+  .prestonBanner {
+    padding: 20px;
+    font-size: 1.5rem;
+  }
+
+  .gallerygrid {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  form {
+    max-width: 460px;
+  }
+
+  .cards section {
+    display: grid;
+    width: 560px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 0;
+  }
+
+  .cards img {
+    grid-column: 2;
+    grid-row: 1/4;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 8px 8px 0;
+  }
+
+  .townStats {
+    grid-column: 1;
+    grid-row: 3;
+    width: 90%;
+  }
+
+  .cards p {
+    grid-column: 1;
+    grid-row: 2;
+    padding: 0 15px 15px;
+  }
+
+  .cards h2 {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 20px;
+  }
+
+  .cards section:nth-child(even) img {
+    grid-column: 1;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .cards section:nth-child(even) h2,
+  .cards section:nth-child(even) p,
+  .cards section:nth-child(even) .townStats {
+    grid-column: 2;
   }
 }

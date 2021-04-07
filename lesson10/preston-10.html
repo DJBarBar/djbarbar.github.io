@@ -3,11 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="author" content="Cory Barton" />
-    <meta name="creation date" content="2020-11-28" />
-    <meta name="city_code" content="5604473" />
-    <meta name="city_name" content="Preston" />
     <meta
       name="description"
       content="Cory Barton Week 11 Weather API Insertion"
@@ -21,152 +16,201 @@
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../css/main.css"
+      href="css/small.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../css/small.css"
+      href="css/medium.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
       media="screen"
-      href="../css/medium.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="../css/large.css"
+      href="css/large.css"
     />
     <link rel="shortcut icon" href="/lesson8/images/favicon.ico" />
   </head>
 
   <body>
-    <div><span id="party"></span></div>
+    <div class="prestonBanner">
+      Preston pancake's in the park! Saturday at 9:00am at the city park.
+    </div>
     <header>
       <a href="../index.html"
         ><img src="/lesson4/images/rain.png" alt="logo"
       /></a>
       <div>
         <h1>Heavy Rain</h1>
-        <div>Weather is the answer to life, the universe, and everything.</div>
+        <div>Weather when you want it.</div>
       </div>
     </header>
-    <nav>
-      <ul class="navigation">
-        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#" class="urhere">Preston</a></li>
-        <li><a href="../pages/soda_springs.html">Soda Springs</a></li>
-        <li><a href="../pages/fish_haven.html">Fish Haven</a></li>
-        <li><a href="../pages/stormcenter.html">Storm Center</a></li>
-        <li><a href="../pages/gallery.html">Gallery</a></li>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li><a href="/lesson9/index.html">Home</a></li>
+        <li class="active"><a href="">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
       <h2>Preston Idaho</h2>
-      <div class="hero">
+      <div class="herodiv">
         <picture>
           <source
-            srcset="../lesson10/images/orange_fall_river_500.jpg"
-            media="(min-width: 22em) and (max-width: 40em)"
+            srcset="images/heroimage-small.jpeg"
+            media="(max-width:450px)"
           />
           <source
-            srcset="../lesson10/images/orange_fall_river_750.jpg"
-            media="(min-width: 40em)"
+            srcset="images/heroimage-medium.jpeg"
+            media="(max-width:700px)"
+          />
+          <source
+            srcset="images/heroimage-large.jpeg"
+            media="(max-width:1000px)"
           />
           <img
-            src="../lesson10/images/orange_fall_river_300.jpg"
-            alt="Responsive Images."
+            class="hero-ph"
+            src="images/heroimage-large.jpeg"
+            alt="picture of sky, a mountain, and valley"
           />
         </picture>
-        <div class="summary">
-          <div class="sumhead">
-            <h3>Weather Summary</h3>
-          </div>
-          <div class="column1">
-            <ul>
-              <li>Conditions:</li>
-              <li>Temp:</li>
-              <li>High:</li>
-              <li>Wind Chill:</li>
-              <li>Humidity:</li>
-              <li>Wind Speed:</li>
-            </ul>
-          </div>
-          <div class="column2">
-            <ul>
-              <li id="ccondition"></li>
-              <li id="ctemp"></li>
-              <li id="htemp"></li>
-              <li id="wchill"></li>
-              <li id="humid"></li>
-              <li id="wspeed"></li>
-            </ul>
-          </div>
-        </div>
+        <section class="weathersummary">
+          <h3>Weather Summary</h3>
+          <p>Currently: <span id="weather"></span></p>
+          <p>Current Temp: <span id="current-temp"></span></p>
+          <p>Wind Chill: <span id="output"></span></p>
+          <p>Humidity: <span id="humidity"></span></p>
+          <p>Wind Speed: <span id="speed"></span></p>
+        </section>
       </div>
-      <div class="forecast">
-        <div>
-          <h3>5 Day Forecast</h3>
-        </div>
-        <table class="forecastable">
-          <tbody></tbody>
+
+      <div class="fiveday">
+        <h3>5 Day Forecast</h3>
+        <table>
+          <tr>
+            <th><span id="dayofweek1"></span></th>
+            <th><span id="dayofweek2"></span></th>
+            <th><span id="dayofweek3"></span></th>
+            <th><span id="dayofweek4"></span></th>
+            <th><span id="dayofweek5"></span></th>
+          </tr>
+          <tr>
+            <td>
+              <img
+                id="icon1"
+                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                alt="unknown"
+              />
+            </td>
+            <td>
+              <img
+                id="icon2"
+                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                alt="unknown"
+              />
+            </td>
+            <td>
+              <img
+                id="icon3"
+                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                alt="unknown"
+              />
+            </td>
+            <td>
+              <img
+                id="icon4"
+                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                alt="unknown"
+              />
+            </td>
+            <td>
+              <img
+                id="icon5"
+                src="https://github.com/yuvraaaj/openweathermap-api-icons/blob/master/icons/unknown.png?raw=true"
+                alt="unknown"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><span id="forecast1"></span>&#8457;</td>
+            <td><span id="forecast2"></span>&#8457;</td>
+            <td><span id="forecast3"></span>&#8457;</td>
+            <td><span id="forecast4"></span>&#8457;</td>
+            <td><span id="forecast5"></span>&#8457;</td>
+          </tr>
         </table>
       </div>
-      <div class="local_events">
-        <h3>Upcoming Events</h3>
-        <hr />
-        <ul class="event_list"></ul>
-      </div>
-      <div class="news"></div>
-      <div class="info">
-        <h2>Preston</h2>
-        <h3>Image and story source from Franklin County History</h3>
-        <div>
-          <img
-            src="../lesson10/images/preston_map.jpg"
-            alt="Historical Map of Preston at the center of Franklin County"
-          />
-          <u>Name and Location</u>
-          <p>
-            Located on the flat, at the junction of Highways 91 and 36 is the
-            county seat of Franklin County: Preston, Idaho. Prior to 1881, the
-            flat was known as “Worm Creek” [pronounced “crick”]. Those that
-            settled this area were predominantly Mormon and their leadership
-            came from the LDS Church President in Salt Lake City, Utah. The name
-            Preston was chosen for the area in the following manner as recorded
-            by Baltzer Peterson:
-          </p>
-          <br />
-          <p>
-            On May 14, 1881, a special meeting was held. Some of the Church
-            Leaders at Salt Lake City objected to the name “Worm Creek” as
-            pertaining to any Church Organization. They thought that a more
-            appropriate name should be given the Ward for they were not in favor
-            of the name “Worm” being used when it pertained to anything
-            connected with the Church. Mrs. Rachel Porter, wife of Bishop
-            Porter, had the privilege of suggesting the name “Preston” in honor
-            of Bishop William B. Preston of the Cache Stake, and who later
-            became the presiding Bishop of the Church. Thus Preston became the
-            name of the Ward and the Community.
-          </p>
-          <a href="http://www.franklincountyhist.org/preston.html"
-            >Continue reading...</a
-          >
+      <section class="articleCity clearfix">
+        <img src="images//bacon.jpg" alt="below carnival swings swinging" />
+        <h3>Bacon Ipsum</h3>
+        <p>
+          Bacon ipsum dolor amet drumstick rump venison, corned beef ham short
+          loin sirloin turducken. Doner pig cow, buffalo filet mignon biltong
+          capicola shoulder rump jowl. Porchetta sausage filet mignon biltong.
+          Frankfurter landjaeger meatloaf corned beef, pig pastrami pork loin.
+          Ham tenderloin cupim biltong capicola pork. Frankfurter ground round
+          rump short ribs, prosciutto tail burgdoggen tri-tip. Flank meatloaf
+          spare ribs, hamburger sausage turducken biltong. Pork turducken tail,
+          turkey bresaola kielbasa pastrami cow. Porchetta short ribs shank
+          cupim pork chop. Strip steak beef short ribs, pancetta flank bacon
+          tail porchetta. Boudin ribeye turkey, frankfurter chicken kevin
+          hamburger chuck swine fatback tongue pork loin. Flank spare ribs pork
+          strip steak t-bone prosciutto pastrami jerky.
+        </p>
+      </section>
+      <div class="contact">
+        <img
+          class="map"
+          src="images/prestonmapsmall.png"
+          alt="small map of preston"
+        />
+        <div class="contactInfo">
+          <h3>Southeast Idaho Local</h3>
+          <div class="contactItem address">
+            <img src="images/location.png" alt="location marker" />
+            <p>70 West Oneida <br />Preston, ID 83263</p>
+          </div>
+          <div class="contactItem phone">
+            <img src="images/phone.png" alt="mobile phone icon" />
+            <p>(208) 852-1817</p>
+          </div>
+          <div class="contactItem email">
+            <img src="images/email.png" alt="email icon" />
+            <p>julies@prestonid.us</p>
+          </div>
+          <div class="social">
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"
+              ><img src="images/facebook-circular-logo.png" alt="facebook icon"
+            /></a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.pinterest.com/"
+              ><img src="images/pinterest-logo.png" alt="pinterest icon"
+            /></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com//"
+              ><img src="images/twitter.png" alt="twitter icon"
+            /></a>
+          </div>
         </div>
       </div>
     </main>
     <footer>
-      <div>
-        &copy; <span id="thisyear"></span> HeavyRain.com | WDD 230 | Cory Barton
-      </div>
-      <span id="currentdate"></span>
+      <p>
+        &copy; Heavy Rain |<a href="https://openweathermap.org/">
+          Attributions</a
+        >
+        | Cory Barton
+      </p>
+      <p id="current-date"></p>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script src="../js/master.js"></script>
+    <script src="js/preston.js"></script>
+    <script src="js/windchill.js"></script>
   </body>
 </html>
