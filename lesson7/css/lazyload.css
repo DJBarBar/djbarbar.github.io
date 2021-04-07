@@ -1,9 +1,27 @@
-header h1 {
-  text-align: center;
-}
-
-main {
+picture {
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
+  margin: 20px;
+}
+img {
+  filter: blur(0em);
+  transition: filter 3s;
+  width: 300px;
+  height: 400px;
+}
+h1,
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: #011c26;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3.5rem;
+}
+body {
+  background-color: #cee3eb;
 }
