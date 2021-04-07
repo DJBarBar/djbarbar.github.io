@@ -15,7 +15,9 @@
     />
   </head>
   <body>
-    <div><span id="pancake"></span></div>
+    <div class="prestonBanner">
+      Preston pancake's in the park! Saturday at 9:00am at the city park.
+    </div>
     <header>
       <picture>
         <img class="logo" src="/lesson4/images/rain.png" alt="weather icon" />
@@ -25,54 +27,140 @@
         <div class="motto">Weather when you want it.</div>
       </section>
     </header>
-    <nav>
-      <ul class="navigate">
-        <li>
-          <a href="#" onclick="toggleMenu()">&#9776; Menu</a>
-        </li>
-        <li><a href="#" class="active">Home</a></li>
-        <li>
-          <a href="/lesson6/preston-6.html">Preston</a>
-        </li>
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="/lesson10/preston-10.html">Preston</a></li>
         <li><a href="#">Soda Springs</a></li>
         <li><a href="#">Fish Haven</a></li>
-        <li>
-          <a href="/lesson8/stormcenter.html">Storm Center</a>
-        </li>
-        <li>
-          <a href="/lesson7/gallery-7.html">Gallery</a>
-        </li>
+        <li><a href="/lesson8/stormcenter.html">Storm Center</a></li>
+        <li><a href="/lesson7/gallery-7.html">Gallery</a></li>
       </ul>
     </nav>
     <main>
-      <h1>Heavy Rain Weather</h1>
-      <p>
-        Proudly pinpointing weather our rural regions. Visit our cities below.
-      </p>
-      <div class="cityinfo"></div>
+      <div class="herodiv">
+        <picture>
+          <source
+            srcset="images/southeastidahosmall.jpg"
+            media="(max-width:450px)"
+          />
+          <source
+            srcset="images/southeastidahomedium.jpg"
+            media="(max-width:700px)"
+          />
+          <source
+            srcset="images/southeastidaholarge.jpg"
+            media="(max-width:1000px)"
+          />
+          <img
+            class="hero-ph"
+            src="images/southeastidaholarge.jpg"
+            alt="picture of sky, snowy mountain, and valley"
+          />
+        </picture>
+      </div>
+      <h2>Our Home Towns</h2>
+      <div class="cards"></div>
+      <section class="articleCity clearfix">
+        <img
+          src="images/sprinkler.jpg"
+          alt="toddler boy playing with sprayer"
+        />
+        <h3>Winter is Here : Top 10 things to winterize</h3>
+        <ul>
+          <li>Check the gutters: Clear gutters of debris</li>
+          <li>Protect Pipes: Insulate at risk pipes</li>
+          <li>
+            Seal the cracks: Install Weather Striping and seal holes/cracks.
+          </li>
+          <li>
+            Stop the slips: Divert drainage away from walkways driveways.
+            Install handrails.
+          </li>
+          <li>
+            Install an emergency release : Consider installing an emergency
+            release to prevent water pipes bursting
+          </li>
+          <li>
+            Keep Cozy : Make sure your house is well insulated and set your
+            thermostat to 65&deg;
+          </li>
+          <li>
+            Have your furnace checked: Service your heating and cooling atleast
+            once a year...especially before you need them the most.
+          </li>
+          <li>
+            Test your Smoke and Carbon Monoxide Detectors: They should be tested
+            monthly and batteries replaced often.
+          </li>
+          <li>
+            Trim trees and clear yard: Snow is heavy on branches, prevent damage
+            to your home and others by removing dead or weak branches.
+          </li>
+          <li>
+            Remove Hoses: Drain and store hoses inside to prevent pipes bursting
+            and prolong the life of your hoses. Insulate outdoor faucets.
+          </li>
+          <li>
+            <a
+              href="https://www.grangeinsurance.com/tips/10-tips-to-winterize-your-home"
+              >Source: More Ideas</a
+            >
+          </li>
+        </ul>
+      </section>
+      <div class="contact">
+        <img
+          class="map"
+          src="images/prestonmapsmall.png"
+          alt="small map of preston"
+        />
+        <div class="contactInfo">
+          <h3>Southeast Idaho Local</h3>
+          <div class="contactItem address">
+            <img src="images/location.png" alt="location marker" />
+            <p>70 West Oneida <br />Preston, ID 83263</p>
+          </div>
+          <div class="contactItem phone">
+            <img src="images/phone.png" alt="mobile phone icon" />
+            <p>(208) 852-1817</p>
+          </div>
+          <div class="contactItem email">
+            <img src="images/email.png" alt="email icon" />
+            <p>julies@prestonid.us</p>
+          </div>
+          <div class="social">
+            <a target="_blank" rel="noreferrer" href="https://www.facebook.com/"
+              ><img src="images/facebook.png" alt="facebook icon"
+            /></a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.pinterest.com/"
+              ><img src="images/pinterest.png" alt="pinterest icon"
+            /></a>
+            <a target="_blank" rel="noreferrer" href="https://twitter.com//"
+              ><img src="images/twitter.png" alt="twitter icon"
+            /></a>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://www.instagram.com/"
+              ><img src="images/instagram.png" alt="instagram icon"
+            /></a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
-      <p>
-        &copy; 2021 | Heavy Rain Weather | WDD 230 | Cory Barton |<a
-          href="/lesson9/home-wireframe.html"
-        >
-          Wireframes</a
-        >
-      </p>
-      <p>
-        <span id="current-date"></span>
-      </p>
+      <a target="_blank" rel="noreferrer" href="home-wireframes.html"
+        ><img src="images/wireframeicon.png" alt="wireframe icon"
+      /></a>
+      <p>&copy; Heavy Rain | Attributions | Cory Barton</p>
+      <p id="current-date"></p>
     </footer>
-    <script src="/lesson6/js/preston.js"></script>
-    <script src="/lesson6/js/pancake.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-    <script>
-      WebFont.load({
-        google: {
-          families: ["Open Sans", "Proza Libre"],
-        },
-      });
-    </script>
-    <script src="js/cityinfo.js"></script>
+    <script src="js/preston.js"></script>
   </body>
 </html>
