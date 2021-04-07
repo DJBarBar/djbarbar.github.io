@@ -1,14 +1,22 @@
 function toggleMenu() {
-  document.getElementsByClassName("navigate")[0].classList.toggle("responsive");
+  document.getElementById("primaryNav").classList.toggle("hide");
 }
 
 const options = {
-  weekday: "long",
-  day: "numeric",
-  month: "long",
-  year: "numeric",
+  dateStyle: "full",
 };
-document.getElementById("current-date").textContent = new Date().toLocaleString(
-  "en-GB",
-  options
-);
+
+document.getElementById(
+  "current-date"
+).textContent = new Date().toLocaleDateString("en-US", options);
+
+window.onload = function fridayBanner() {
+  let d = new Date();
+  const ban = document.querySelector(".prestonBanner");
+
+  if (d.getDay() == 5) {
+    ban.style.display = "block";
+  } else {
+    ban.style.display = "none";
+  }
+};

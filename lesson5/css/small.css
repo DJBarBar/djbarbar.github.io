@@ -1,48 +1,24 @@
+nav,
+footer {
+  background: #77bdd9;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #77bdd9 0%, #51abcc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #77bdd9 0%, #51abcc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#77bdd9', endColorstr='#51abcc', GradientType=0);
+  /* IE6-9 */
+}
+
 body {
-  font-family: "Open Sans";
-}
-
-h1,
-h2 {
-  font-family: "Proza Libre";
-}
-
-header {
-  display: flex;
-  align-items: center;
-  background-color: #8bbbd9;
-  color: #274b59;
-  width: 100%;
-  justify-content: center;
-  flex-flow: column;
-}
-
-header section {
-  display: flex;
-  flex-flow: column;
-}
-
-header img {
-  width: 100%;
-}
-
-header section h1 {
-  font-size: 2rem;
-  margin: 0;
-}
-
-header section div {
-  align-self: center;
-  font-size: 1rem;
-  margin: 0;
-}
-
-.back a {
-  color: #8bbbd9;
+  font-size: 16px;
+  color: #011c26;
 }
 
 nav {
-  background: #274b59;
+  font-family: "Poppins", sans-serif;
 }
 
 nav button {
@@ -59,13 +35,15 @@ nav ul {
   padding: 0;
   margin: 0;
   overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 nav ul li a {
   display: block;
   padding: 0.8rem 2%;
   text-decoration: none;
-  color: #8bbbd9;
+  color: #011c26;
   border-top: 1px solid rgba(2, 64, 89, 0.4);
   text-align: center;
   font-size: 1rem;
@@ -74,12 +52,12 @@ nav ul li a {
 }
 
 nav ul li.active a {
-  background-color: #8bbbd9;
+  background-color: rgba(2, 64, 89, 0.2);
   color: #fff;
 }
 
 nav ul li a:hover {
-  background-color: #8bbbd9;
+  background-color: rgba(2, 64, 89, 0.4);
   color: #fff;
 }
 
@@ -87,155 +65,174 @@ nav ul.hide {
   display: none;
 }
 
-main,
+header,
 footer {
+  background-color: #024059;
+  color: white;
+  text-align: center;
+}
+
+header {
+  padding: 5px 5px 10px 5px;
   display: flex;
-  flex-flow: column;
-  align-content: center;
+  align-items: center;
   justify-content: center;
-  margin: auto;
-  max-width: 766px;
 }
 
-main h2 {
+main,
+footer,
+.motto {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5em;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  margin: 0;
+  font-weight: normal;
+}
+
+h2 {
   text-align: center;
-  width: 100%;
+}
+
+footer p:first-child {
+  padding-top: 10px;
+  padding-bottom: 0;
   margin: 0;
 }
 
-main div {
-  display: block;
-  border: 1px solid black;
-  background-color: whitesmoke;
-  margin: 5px;
-  padding: 5px;
-  align-content: flex-start;
+footer p:last-child {
+  padding-bottom: 10px;
+  padding-top: 0;
+  margin: 0;
 }
 
 footer {
-  background-color: #8bbbd9;
-  font-family: "Open Sans";
-  color: #274b59;
-  text-align: center;
+  color: #011c26;
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 5px;
 }
 
-.hero {
+.herodiv {
   position: relative;
-  align-content: center;
-  justify-content: center;
 }
 
-.hero picture img {
+.hero-ph {
+  margin: 10px auto;
   width: 100%;
-  height: 500px;
-  border-radius: 1rem;
+  height: auto;
 }
 
-.weatherSummary {
-  display: grid;
-  grid-template-columns: auto;
-  margin: 0;
-  border: 0;
-  border-radius: 1rem;
-  padding: 1em;
-  background-color: whitesmoke;
+.weathersummary {
   position: absolute;
-  top: 1rem;
-  left: 1.5rem;
-  max-width: 10em;
-  min-width: 10em;
+  top: 30px;
+  left: 30px;
+  background-color: rgba(2, 64, 89, 0.8);
+  border: 1px solid #024059;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 0 30px #011c26;
+  color: #fff;
+  padding-bottom: 0;
 }
-
-.weatherhead {
-  grid-column: 1 / 3;
+.weathersummary p,
+.weathersummary h3 {
+  margin: 1.5px;
 }
-
-.weatherhead h3 {
-  margin: 0;
+.weathersummary h3 {
+  text-decoration: underline;
 }
-
-.column1 {
-  text-align: right;
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-.column2 {
-  text-align: left;
-  margin: 0;
-  border: 0;
-  padding: 0;
-}
-
-.column1 p,
-.column2 p {
-  margin: 0;
-}
-
-.forcast {
-  display: none;
-}
-
-.weatherTable {
-  display: none;
-}
-
-.article {
-  display: block;
-  background: #274b59;
-  border: 2px solid black;
-  margin: 1rem;
-  padding: 1rem;
-  color: whitesmoke;
-}
-.article img {
-  border-radius: 0.5rem;
-  float: right;
+.articleCity img {
   width: 100%;
-  max-width: 300px;
-  margin-left: 1.5rem;
-  margin-bottom: 1.5rem;
+  box-shadow: 0 0 30px #011c26;
+}
+.articleCity {
+  margin-bottom: 20px;
 }
 
 .contact {
-  display: block;
-  background: #274b59;
-  color: whitesmoke;
-  text-decoration: none;
+  background-color: #cee3eb;
+  color: #011c26;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.contactInfo {
+  display: grid;
 }
 
-.contact .map {
-  display: none;
+.contactItem {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  align-items: center;
 }
 
-.contact p img {
-  width: 2rem;
-}
-
+.contactInfo h3,
+.contactItem,
 .social {
-  display: flex;
-  flex-flow: row;
+  grid-column: 2/3;
 }
 
+.contactItem img {
+  width: 24px;
+}
+.contactItem p {
+  margin: 5px;
+}
+.contactInfo h3 {
+  text-align: left;
+  margin: 0;
+}
 .social img {
-  min-width: 20px;
-  max-width: 50px;
-  width: 100%;
+  margin: 15px 1px 10px 0;
+  width: 30px;
 }
-
-#pancake {
-  background-color: grey;
-  display: flex;
-  flex-flow: column;
-  align-content: center;
-  justify-content: center;
-  margin: auto;
-  text-align: center;
-  padding: 10px;
-}
-
 .logo {
   width: 80px;
   height: auto;
+  margin-right: 10px;
+}
+
+.headings {
+  display: flex;
+  flex-direction: column;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.motto {
+  font-style: italic;
+  color: #fff;
+  margin-left: 20px;
+}
+.fiveday {
+  display: none;
+}
+.articleCity {
+  text-align: justify;
+  background-color: #cee3eb;
+  margin: 5px;
+  padding: 20px;
+}
+.map {
+  display: none;
+}
+.prestonBanner {
+  background-color: #d9734e;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: none;
 }

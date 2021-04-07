@@ -1,4 +1,4 @@
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: 64rem) {
   nav button {
     display: none;
   }
@@ -12,40 +12,19 @@
   }
   nav ul li a {
     border: none;
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
     padding: 0.6rem 1rem;
   }
   .logo {
     width: 10rem;
     margin-bottom: 0;
   }
-
-  main h2 {
-    font-size: 3em;
+  .fiveday {
+    background-color: #77bdd9;
+    padding: 10px 0 20px 0;
+    max-width: 1000px;
   }
 
-  .forecast,
-  .weatherTable {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    margin: 1rem;
-  }
-
-  table {
-    table-layout: auto;
-    border-collapse: collapse;
-    margin: 1rem;
-  }
-
-  th,
-  tr,
-  td {
-    border: 2px double #274b59;
-    padding: 0.5em;
-    align-content: center;
-    text-align: center;
+  .fiveday table {
+    background-color: #fff;
   }
 }
