@@ -252,7 +252,7 @@ picture.photoBlock {
 
 .button:hover {
   background-color: #fff;
-  color: #0000fe;
+  color: #066cba;
 }
 .float {
   font-size: 1.25rem;
@@ -310,7 +310,7 @@ picture.photoBlock {
   align-self: center;
 }
 .contact h2 {
-  background-color: #0000fe;
+  background-color: #066cba;
   color: #fff;
   text-align: center;
 }
