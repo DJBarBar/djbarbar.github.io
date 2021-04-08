@@ -236,7 +236,7 @@ picture.photoBlock {
   justify-self: center;
 }
 .button {
-  background-color: #0000fe;
+  background-color: #066cba;
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
@@ -443,7 +443,7 @@ section.opperation {
 }
 
 footer {
-  background-color: #0000fe;
+  background-color: #066cba;
   text-align: center;
   color: white;
   padding: 1rem;
