@@ -1,0 +1,20 @@
+@media only screen and (min-width: 64rem) {
+  .weathersummary {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+  }
+
+  div.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .float {
+    left: 45rem;
+  }
+
+  .grid .directory {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

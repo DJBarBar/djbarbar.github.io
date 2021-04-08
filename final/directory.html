@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pleasant Grove Chamber of Commerce Directory</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="clearfix center">
+      <div class="headcontainer">
+        <img src="images/chamberlogo.png" alt="Logo" />
+        <div>
+          <h1>Pleasant Grove</h1>
+          <h2>Chamber of Commerce</h2>
+        </div>
+      </div>
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pg.html">Pleasant Grove</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li class="active"><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Members of Pleasant Grove Chamber of Commerce</h1>
+
+      <div class="grid" onclick="toggleSwitch(this)">
+        &#9776; Tiles / Lines
+        <div class="directory"></div>
+      </div>
+
+      <section class="contact">
+        <div class="contactInfo">
+          <h2>Office</h2>
+          <div class="address">
+            <p>Pleasant Grove Camber of Commerce</p>
+            <p>70 S 100 E</p>
+            <p>Pleasant Grove UT 84414</p>
+            <br />
+            <p>Phone: 801-922-4540</p>
+            <p>Email: chamber@pglindonchamber.org</p>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d23975.428267924166!2d-111.97607697913281!3d41.31041830263757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1617847497372!5m2!1sen!2sus"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+          <div class="address"></div>
+        </div>
+        <div class="media">
+          <a href="https://www.facebook.com/"
+            ><img src="images/facebook-circular-logo.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://www.pinterest.com"
+            ><img src="images/pinterest-logo.png" alt="Pinterest Icon"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="images/twitter.png" alt="Twitter Icon"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; 2021 &bull; Pleassant Grove Chamber of Commerce<br />
+      <span id="currentdate"></span>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/directory.js"></script>
+  </body>
+</html>

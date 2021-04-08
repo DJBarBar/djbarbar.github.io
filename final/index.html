@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pleasant Grove Chamber of Commerce</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/small.css" rel="stylesheet" />
+    <link href="css/medium.css" rel="stylesheet" />
+    <link href="css/large.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="clearfix center">
+      <div class="headcontainer">
+        <img src="images/chamberlogo.png" alt="Logo" />
+        <div>
+          <h1>Pleasant Grove</h1>
+          <h2>Chamber of Commerce</h2>
+        </div>
+      </div>
+      <nav class="clearfix">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <ul id="primaryNav" class="hide">
+          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="pg.html">Pleasant Grove</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="pagetitle">
+        <h1>Welcome to the Pleasant Grove Chamber of Commerce</h1>
+        <p>
+          We are the voice of business in Pleasant Grove and Lindon cities,
+          including surrounding areas . We support retail and service businesses
+          by creating opportunities for their growth and success through
+          networking, education and advocacy. Additionally, we partner with
+          large corporations to promote economic development and a vibrant
+          business environment.
+        </p>
+      </div>
+
+      <section class="hero">
+        <picture class="herophoto">
+          <source
+            media="(max-width: 450px)"
+            srcset="images/heroimage-small.jpeg"
+          />
+          <source
+            media="(max-width: 700px)"
+            srcset="images/heroimage-medium.jpeg"
+          />
+          <source
+            media="(max-width: 1000px)"
+            srcset="images/heroimage-large.jpeg"
+          />
+          <img
+            src="images/heroimage-large.jpeg"
+            alt="picture of sky, a mountain, and valley"
+          />
+        </picture>
+
+        <section class="weathersummary">
+          <h2>Current Weather Summary</h2>
+          <section class="summaryBox">
+            <div class="summaryTitles">
+              <p>Forcast: &nbsp;</p>
+              <p>Tempurature: &nbsp;</p>
+              <p>Wind Chill: &nbsp;</p>
+              <p>Wind Speed: &nbsp;</p>
+              <p>Humidity: &nbsp;</p>
+            </div>
+            <div class="summaryData">
+              <p><span id="currentForecast"></span></p>
+              <p><span id="currentTemp"></span></p>
+              <p><span id="windChill"></span></p>
+              <p><span id="windSpeed"></span></p>
+              <p><span id="currentHumidity"></span></p>
+            </div>
+          </section>
+        </section>
+      </section>
+
+      <div class="cards"></div>
+
+      <section class="membershipOffer">
+        <h2>Join The Chamber</h2>
+          <div class="membership">
+            <a class="button" href="join.html">Become a Member</a>
+          </div>
+        </section>
+      </section>
+
+      <section class="hero">
+        <picture class="herophoto">
+          <source media="(max-width: 400px)" srcset="images/flag300.jpg" />
+          <source media="(max-width: 600px)" srcset="images/flag600.jpg" />
+          <source media="(max-width: 800px)" srcset="images/flag800.jpg" />
+          <img src="images/flag1200.jpg" alt="Flag in Canyon" />
+        </picture>
+
+        <section class="follow">
+          <div class="float">
+            <h2>Story Time on Demand</h2>
+            <p>
+                Did you know the Pleasant Grove Library offers a variety of 
+                story times to watch? Updated regularly, there are several 
+                varieties including Spanish Story Time, Wee Read, Rhythm and 
+                Dance and more.
+
+            </p>
+          </div>
+          <div class="group">
+            <img
+              class="trail"
+              src="images/ftf-trail400.jpg"
+              alt="Trail up the canyon"
+            />
+            <img
+              class="parade"
+              src="images/ftf-parade400.jpg"
+              alt="Parade down Washington Blvd"
+            />
+          </div>
+        </section>
+      </section>
+
+      <section class="forecast">
+        <h2>Three Day Forecast</h2>
+        <div class="forecastBlock" id="card"></div>
+      </section>
+
+      <section class="contact">
+        <div class="contactInfo">
+          <h2>Office</h2>
+          <div class="address">
+            <p>Pleasant Grove Camber of Commerce</p>
+            <p>70 S 100 E</p>
+            <p>Pleasant Grove, UT 84062</p>
+            <br />
+            <p>Phone: (801)-922-4540</p>
+            <p>Email: chamber@pglindonchamber.org</p>
+          </div>
+        </div>
+        <div class="media">
+          <a href="https://www.facebook.com/"
+            ><img src="images/facebook-circular-logo.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://www.pinterest.com"
+            ><img src="images/pinterest-logo.png" alt="Pinterest Icon"
+          /></a>
+          <a href="https://twitter.com/"
+            ><img src="images/twitter.png" alt="Twitter Icon"
+          /></a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      &copy; 2021 &bull;Pleasant Grove Chamber of Commerce<br />
+      <span id="currentdate"></span>
+    </footer>
+    <script src="js/currentdate.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/business.js"></script>
+  </body>
+</html>

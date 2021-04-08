@@ -1,0 +1,170 @@
+@media only screen and (min-width: 35rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.55rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .headcontainer h1 {
+    margin: 30px 0 0 0;
+  }
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  nav button {
+    display: none;
+  }
+  nav {
+    border: 5px #1c355e solid;
+  }
+  nav ul.hide {
+    display: block;
+  }
+  nav ul {
+    margin-left: 2%;
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+  }
+  nav ul li a:hover {
+    border-radius: 5px;
+  }
+
+  nav ul li.active a {
+    background-color: #479ed7;
+    border-radius: 5px;
+  }
+
+  nav ul li a {
+    padding: 0.8rem 0.6rem;
+  }
+
+  .weathersummary {
+    position: absolute;
+    bottom: 3rem;
+    right: 3rem;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+
+  .membership {
+    grid-row: 2;
+    grid-column: 1/3;
+  }
+
+  .float {
+    position: absolute;
+    top: 3rem;
+    left: 28rem;
+    margin-right: 2rem;
+  }
+  .follow img {
+    width: 100%;
+    max-width: 400px;
+  }
+  .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .trail {
+    grid-column: 1;
+    justify-self: center;
+  }
+  .parade {
+    grid-column: 2;
+    justify-self: center;
+  }
+
+  .forecastBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact {
+    border: 2px solid #fff;
+    box-shadow: 5px 5px 15px 5px #000;
+    border-radius: 5px;
+    align-self: center;
+  }
+  .contact h2 {
+    background-color: #0000fe;
+    color: #fff;
+    text-align: center;
+  }
+  .contact p {
+    margin: 0 6%;
+  }
+  .contact .media {
+    padding: 2rem;
+    text-align: center;
+  }
+  .contact .media a {
+    padding: 15px;
+  }
+
+  picture.photoBlock {
+    display: block;
+  }
+  .grid .directory {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+  }
+  .photoBlock {
+    margin: 2%;
+  }
+  .line .businessBlock {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 2rem;
+    border: 2px solid #000;
+    box-shadow: 5px 5px 15px 5px #000;
+  }
+  .line .infoBlock li {
+    list-style-type: none;
+    margin: 0 3%;
+    padding: 3px;
+  }
+
+  .joinchamber,
+  .commentcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .joinchamber fieldset,
+  .commentcontainer fieldset {
+    justify-self: center;
+  }
+
+  .flagPannel {
+    display: block;
+    justify-self: center;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px 5px gray;
+    width: 100%;
+    max-width: 200px;
+  }
+  .ra-page ol li {
+    font-size: 1.5rem;
+  }
+  .ra-page ul li {
+    font-size: 1.25rem;
+  }
+
+  .r-and-a {
+    font-size: 1.5rem;
+  }
+}

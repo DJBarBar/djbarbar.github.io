@@ -1,0 +1,460 @@
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+header,
+footer,
+legend {
+  font-family: "Kanit", sans-serif;
+  margin: 2%;
+}
+
+h1 {
+  font-size: 1.25rem;
+}
+h2 {
+  font-size: 1rem;
+}
+h3 {
+  font-size: 0.9rem;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.headcontainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.headcontainer img {
+  grid-column: 1;
+  justify-self: end;
+  align-self: center;
+}
+
+.headcontainer h1,
+.headcontainer h2 {
+  grid-column: 2;
+  justify-self: start;
+}
+
+.headcontainer h1 {
+  margin: 25px 0 0 0;
+}
+
+.headcontainer h2 {
+  margin: 0;
+}
+
+header img {
+  margin: 10px;
+}
+
+div.show {
+  display: block;
+}
+div.hide {
+  display: none;
+}
+
+nav button {
+  margin: -5rem 2%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #000;
+  float: right;
+}
+
+nav {
+  background-color: #1c355e;
+  border: 5px #1c355e solid;
+}
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li a {
+  display: block;
+  padding: 0.8rem 0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  color: white;
+}
+nav ul li a:hover {
+  background-color: white;
+  color: #1c355e;
+}
+
+nav ul li.active a {
+  background-color: #479ed7;
+}
+
+nav ul.hide {
+  display: none;
+}
+
+main {
+  margin: 0 2%;
+}
+
+.pagetitle h1 {
+  text-align: center;
+}
+.pagetitle p {
+  margin: 0 2% 2% 2%;
+}
+
+.hero {
+  margin: 0 0 2rem 0;
+  position: relative;
+  width: 100%;
+}
+main picture.herophoto img {
+  width: 100%;
+  border-radius: 5px;
+}
+main picture.herophoto {
+  display: block;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.weathersummary {
+  background-color: rgb(0, 0, 0, 0.5);
+  border: 2px solid #000;
+  padding: 0.75rem;
+  box-shadow: 0 0 30px #000;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+.summaryBox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.weathersummary h2 {
+  margin: 0;
+  padding: 0.25rem;
+}
+.weathersummary p {
+  margin: 0;
+  padding: 0.1rem;
+}
+.summaryTitles {
+  text-align: right;
+  grid-column: 1;
+  margin: 0;
+}
+.summaryData {
+  text-align: left;
+  font-weight: bolder;
+  grid-column: 2;
+}
+
+div.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+div.cards .businessBlock {
+  border: 2px solid #000;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 15px 5px #000;
+}
+div.cards picture.logoBlock {
+  margin: 0 2%;
+}
+div.cards section.infoBlock {
+  margin: 0 2%;
+}
+
+.grid .directory {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.directory .businessBlock {
+  border: 2px solid #000;
+  margin-bottom: 1rem;
+  box-shadow: 5px 5px 15px 5px #000;
+}
+.businessBlock li {
+  list-style-type: none;
+  margin: 0 4%;
+  padding: 3px;
+}
+.infoBlock {
+  margin-bottom: 1rem;
+}
+
+.businessBlock ul {
+  font-size: 1.25rem;
+  font-weight: bolder;
+}
+picture.logoBlock {
+  margin: 4%;
+}
+
+picture.photoBlock {
+  display: none;
+}
+
+.membershipOffer {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 15px 5px #000;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+.membershipOffer h2 {
+  text-align: center;
+}
+
+.membership {
+  justify-self: center;
+}
+.button {
+  background-color: #0000fe;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  border: 2px solid #000;
+  border-radius: 15px;
+  box-shadow: 3px 3px 8px grey;
+  width: 75%;
+  max-width: 18rem;
+  padding: 7px;
+  color: #fff;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: #0000fe;
+}
+.float {
+  font-size: 1.25rem;
+  background: radial-gradient(#d2fafb, #a3bfc8);
+  border: 1px solid #000;
+  padding: 0.75rem;
+  box-shadow: 0 0 30px #000;
+  border-radius: 15px;
+  text-align: center;
+}
+.follow .group {
+  width: 100%;
+  align-content: center;
+}
+.follow img {
+  width: 100%;
+}
+
+.forecast {
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.forecastBlock {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+}
+.forecastBlock div {
+  text-align: center;
+  border: 2px solid #000;
+  max-width: 320px;
+  border-radius: 5px;
+}
+.forecastBlock div h2 {
+  background-color: rgba(0, 0, 254, 0.5);
+  margin: 0;
+  padding: 1rem 0;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 4px 4px 0 0;
+}
+.forecastBlock div img {
+  width: 96px;
+  height: auto;
+}
+.forecastBlock div p {
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+.contact {
+  border: 2px solid #fff;
+  box-shadow: 5px 5px 15px 5px #000;
+  border-radius: 5px;
+  align-self: center;
+}
+.contact h2 {
+  background-color: #0000fe;
+  color: #fff;
+  text-align: center;
+}
+.contact p {
+  margin: 0 6%;
+}
+.contact .media {
+  padding: 1rem;
+  text-align: center;
+}
+
+.road,
+.pGrove,
+.strawberryDays {
+  border: 4px solid #000;
+  box-shadow: 5px 5px 15px 5px #000;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+.road picture {
+  float: right;
+  padding: 0.35rem;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #445ba9; /* need to change color */
+  border-radius: 10px;
+  padding: 0.5rem 2%;
+  max-width: 19rem;
+  box-shadow: 5px 5px 10px 5px gray;
+  justify-self: center;
+}
+
+form legend {
+  font-size: 1.15rem;
+  font-weight: bolder;
+  color: black;
+  margin: 0 1rem;
+  padding: 0.75rem 1rem;
+  background-color: #a3bfc8;
+  border-radius: 4px;
+  width: 16rem;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+  color: #000;
+  font-weight: bolder;
+  font-size: 1rem;
+}
+
+form label.top input,
+form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 2px #000; /* color*/
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #000;
+  font-weight: bolder;
+  width: 100%;
+  max-width: 18rem;
+  background-color: #a3bfc8;
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: #000;
+}
+form p {
+  font-size: 1rem;
+  margin: 0 1rem 1rem 2rem;
+}
+form input.submitBtn {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  border: 2px solid white;
+  background-color: #1c355e;
+  color: white;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  max-width: 18rem;
+  box-shadow: 5px 5px 10px 5px gray;
+}
+
+form input.submitBtn:hover {
+  border: 2px solid red;
+}
+
+form label.top input:required {
+  border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+  border-left: green solid 6px;
+}
+
+section.board,
+section.opperation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-right: 5px;
+  border-bottom: 4px solid #000;
+}
+.title {
+  grid-column: 1;
+  text-align: right;
+}
+.namges {
+  grid-column: 2;
+  text-align: left;
+}
+
+.flagPannel {
+  display: none;
+}
+
+.thanks {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 3%;
+  margin: 4%;
+  box-shadow: 5px 5px 15px 5px #000;
+}
+.thanks p {
+  margin: 0 2%;
+}
+
+footer {
+  background-color: #0000fe;
+  text-align: center;
+  color: white;
+  padding: 1rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}

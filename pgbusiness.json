@@ -1,0 +1,124 @@
+{
+    "members": [
+      {
+        "business": "Priority Law",
+        "address": "526 W. Center Street, N105",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "(801) 960-2750",
+        "logo": "/jsonimages/logo-priority.jpg",
+        "webaddress": "https://prioritylawfirm.com",
+        "imageurl": "/jsonimages/logo-priority.jpg"  
+      },
+      {
+        "business": "Therapeutic Massage & Bodywork",
+        "address": "140 S Main St #3",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "(801) 899-3904",
+        "logo": "logo-theraputic.jpg",
+        "webaddress": "https://utahtherapeuticmassage.com",
+        "imageurl": "logo-theraputic.jpg"  
+      },
+      {
+        "business": "Big O Tire",
+        "address": "1893 N 400 E",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "(801) 737-4781",
+        "logo": "/jsonimages/logo-bigo.png",
+        "webaddress": "www.bigotires.com",
+        "imageurl": "/jsonimages/bigotires300.jpg"  
+      },
+      {
+        "business": "Instructure",
+        "address": "2100 Pleasant Grove Blvd Suite 600",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "385-267-9655",
+        "logo": "/jsonimages/logo-instructure.jpg",
+        "webaddress": "https://www.instructure.com",
+        "imageurl": "/jsonimages/logo-instructure.jpg"
+      },
+      {
+        "business": "Sound Commercial Capital",
+        "address": "881 W State St #120-423",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "903-386-3464",
+        "logo": "/jsonimages/logo-sound.jpg",
+        "webaddress": "http://www.sound.com",
+        "imageurl": "/jsonimages/logo-sound.jpg"  
+      },
+      {
+        "business": "Powerhouse Motorsports",
+        "address": "25 W State St",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "801-785-2244",
+        "logo": "/jsonimages/logo-powerhouse.jpg",
+        "webaddress": "https://www.powerhouseusa.com",
+        "imageurl": "/jsonimages/logo-powerhouse.jpg"  
+      },
+      {
+        "business": "Creekside Mortgage",
+        "address": "1982 W Pleasant Grove Blvd Suite K ",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "801-318-4996",
+        "logo": "/jsonimages/logo-creekside.jpg",
+        "webaddress": "https://www.creeksideutah.com",
+        "imageurl": "/jsonimages/logo-creekside.jpg"  
+      },
+      {
+        "business": "Soaplicity",
+        "address": "93 S. Main St. Ste. B",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "8013195900",
+        "logo": "/jsonimages/logo-soap.jpg",
+        "webaddress": "https://www.soaplicity.com",
+        "imageurl": "/jsonimages/logo-soap.jpg"  
+      },
+      {
+        "business": "Krull Realty LLC.",
+        "address": "2737 N 1550 W",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "801-318-1424",
+        "logo": "/jsonimages/logo-krull.jpg",
+        "webaddress": "https://www.bhgre.com/Better-Homes-and-Gardens-Real-Estate-Influence-Partners-6623c/Tawnya-Krull-418405a",
+        "imageurl": "/jsonimages/logo-krull.jpg"  
+      },
+      {
+        "business": "Gandolfos Deli",
+        "address": "715 S Main Street",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "801-796-1200",
+        "logo": "/jsonimages/logo-gandolfos.jpg",
+        "webaddress": "https://gandolfosdeli.com",
+        "imageurl": "/jsonimages/logo-gandolfos.jpg"
+      },{
+        "business": "Village Baker",
+        "address": "1865 West Pleasant Grove Blvd",
+        "city": "Pleasant Grove",
+        "state": "UT",
+        "zipcode": "84062",
+        "phonenumber": "N/A",
+        "logo": "/jsonimages/logo-village.jpg",
+        "webaddress": "N/A",
+        "imageurl": "/jsonimages/logo-village.jpg"
+      }
+    ]
+  }
