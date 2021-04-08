@@ -148,15 +148,6 @@
   .commentcontainer fieldset {
     justify-self: center;
   }
-
-  .flagPannel {
-    display: block;
-    justify-self: center;
-    border-radius: 1rem;
-    box-shadow: 5px 5px 10px 5px gray;
-    width: 100%;
-    max-width: 200px;
-  }
   .ra-page ol li {
     font-size: 1.5rem;
   }
